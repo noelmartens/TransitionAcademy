@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Listbuilder.js"></script>
+    <link rel="stylesheet" href="Listbuilder.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>List builder</h1>
+    <p1>This page builds lists and you either add to list 1 or 2</p1>
+    <div class="FlexboxRow">
+        <div class="flexrow_Column">
+            <form name="myForm">
+                <h2>Enter a Word</h2>
+                <input type="text" id="theWord" name="theWord">
+                <h2>Choose a List</h2>
+                <input type="number" id="listcol" name="listcol"> <br> <br>
+                <input type="button" value="Add To List" onclick="addToList()">
+            </form>
+        </div>
+
+        <div class="flexrow_Column">
+            <table id="listOne">
+            </table>
+            <input type="button" value="clearList" onclick="Clearlist('listOne')">
+        </div>
+
+        <div class="flexrow_Column">
+            <table id="listTwo">
+            </table>
+            <input type="button" value="clearList" onclick="Clearlist('listTwo')">
+        </div>
+    </div>
+</body>
+
+</html>

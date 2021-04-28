@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Survey Day 1</title>
+    <link rel="stylesheet" href="survey.css">
+
+</head>
+
+
+
+<body>
+    <form id=surveyForm onsubmit="myFunction()">
+
+        <div class="Surveyclass">
+            <p>What's your full name?</p>
+            <input type="text" id="fname" name="fname" required> <br>
+        </div>
+
+        <div class="Surveyclass">
+            <p>What's your Email Address?</p>
+            <input type="email" id="emailAdd" name="emailAdd" required> <br>
+        </div>
+
+        <div class="Surveyclass">
+            <p>Enrollment Status?</p>
+           <select name="ClassEnroll" id="ClassEnroll">
+                <option disabled selected value>Select current situation</option>
+                <option value="Full Time">FullTime</option>
+                <option value="Half Time">HalfTime</option>
+                <option value="Week end">Weekend</option>
+            </select>
+        </div>
+
+        <div class="Surveyclass">
+            <p>What's your gender?</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+
+        <div class="Surveyclass">
+            <p>What's your favorite subject?</p>
+            <input type="checkbox" id="SubjectEnrolled1" name="SubjectEnrolled1" value="Math">
+            <label for="SubjectEnrolled1"> Math </label><br>
+            <input type="checkbox" id="SubjectEnrolled2" name="SubjectEnrolled2" value="Science">
+            <label for="SubjectEnrolled2"> Science </label><br>
+            <input type="checkbox" id="SubjectEnrolled3" name="SubjectEnrolled3" value="English">
+            <label for="SubjectEnrolled3"> English </label><br> <br>
+
+        </div>
+
+        <script>
+            function myFunction() {
+                var fname1 = document.getElementById("fname").value;
+                alert("Form Submitted successfully. " + fname1 + "!")
+            }
+        </script>
+
+        <div class="Surveyclass">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+
+* {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+
+  }
+ 
+  h1 {
+    color: rgb(7, 7, 7);
+    margin-left: 15px;
+
+  }
+  
+/* Container for flexboxes */
+.FlexboxRow1 {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 4px solid rgb(10, 10, 10);
+
+
+ }
+  
+  /* Create four equal entries in myflexbox */
+  .flexr1_Column {
+    flex: 25%;
+    padding: 20px;
+
+  }
+  
+  .FlexboxRow2 {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 4px solid rgb(10, 10, 10);
+  }
+  
+  .FlexboxRow3 {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  /* Create five equal entries in myflexbox */
+  .flexr2_Column {
+    flex: 20%;
+    padding: 20px;
+
+  }
+  /* Create 2 equal entries in myflexbox */
+  .flexr3_Column {
+    flex: 20%;
+    padding: 10px;
+
+  }
+
+  /* Media query - on screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .flexr1_Column {
+      flex: 50%;
+    }
+  }
+ 
+  /* Media query - on screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .myflexboxRow1 {
+      flex-direction: column;
+      }
+  }

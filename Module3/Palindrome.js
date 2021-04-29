@@ -53,6 +53,7 @@ function palindrome1(theWord) {
 
 function reverseTheString(theWord) {
     //  this reverses a string working backward char by char
+    //  appending to the end of the string
     var returnVal = "";
     for (var i = theWord.length - 1 ; i >= 0; i--) { 
         returnVal += theWord[i]; 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Calculator.js"></script>
+    <link rel="stylesheet" href="Calculator.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Central Tendency Calculator</h1>
+    <div class="FlexboxRow">
+        <div class="flexrow_Column">
+            <h1>Numbers to use</h1>
+            <form name="myForm">
+                <p><strong>Enter the minimum range value &nbsp &nbsp  </strong>
+                    <input type="number" id="minValue" name="minValue" onfocusout="disableMin()">
+                </p2>
+                <p><strong>Enter the maximum range value &nbsp &nbsp </strong>
+                    <input type="number" id="maxValue" name="maxValue" onfocusout="disableMax()"> <br>
+                </p>
+
+                <p> <strong>Enter the number to use &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</strong>
+                <input type="number" id="myNumber" name="myNumber"> <br> <br> </p>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                <input type="button" value="Calculate" onclick="calcValues('myMean')" >
+                &nbsp &nbsp &nbsp 
+                <input type="button" value="Reset the Form" onclick="resetForm()">
+            </form>
+        </div>
+
+        <div class="flexrow_Column">
+            <h1>My Numbers</h1>
+            <table id="listOne">
+            </table>
+           
+        </div>
+
+        <div class="flexrow_Column">
+         
+            <h1>Results</h1>
+            <table id="listTwo">
+            </table>
+
+            <p><strong>Mean value........: <input type="text" id="meanValue"   name="meanValue"   disabled = true></strong></p>
+            <p><strong>Median value......: <input type="text" id="medianValue" name="medianValue" disabled = true></strong></p> 
+            <p><strong>Mode value........: <input type="text" id="modeValue"   name="modeValue"   disabled = true></strong></p> 
+           
+        </div>
+    </div>
+</body>
+
+</html>

@@ -11,7 +11,7 @@ function addToList() {
         alert("A word must be entered");
     }
     if (theCol == null){
-        alert("You must choose a column");
+        alert("You must choose a list   ");
     }
     if (theCol < 1){
         alert("the list must be either 1 or 2");

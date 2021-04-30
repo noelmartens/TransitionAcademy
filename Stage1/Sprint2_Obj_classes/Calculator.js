@@ -116,7 +116,7 @@ function myMedian() {
     var rows = myTable.rows;
   
     sortTable();
-    alert("mymeedian:  got to here  a " );
+    // alert("mymeedian:  got to here  a " );
     var myTable = document.getElementById("listOne");
     var rows = myTable.rows;
     
@@ -127,7 +127,7 @@ function myMedian() {
         return (parseInt(rows[middle - 1].innerHTML) + parseInt(rows[middle].innerHTML) / 2);
     }
 
-    alert("mymeedian:  got to here  b " + parseInt(rows[middle].innerHTML));
+    //alert("mymeedian:  got to here  b " + parseInt(rows[middle].innerHTML));
     return parseInt(rows[middle].innerHTML);
 
 }
@@ -161,7 +161,7 @@ function sortTable() {
             //y = rows[i + 1].getElementsByID("listOne").innerHTML[0];
             //alert("sorttable:  got to here  y " + y);
             // Check if the two rows should switch place:
-            if (x.innerHTML > y.innerHTML) {
+            if (x > y) {
                 // If so, mark as a switch and break the loop:
                 shouldSwitch = true;
                 break;

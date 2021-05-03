@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="RandomQuote.js"></script>
+    <link rel="stylesheet" href="RandomQuote.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>WebService API Demonstration</h1>
+    <div class="FlexboxRow">
+        <div class="flexrow_Column">
+            <h1> </h1>
+            <form name="myForm">
+                <p><strong>How long would you like your quote? &nbsp &nbsp </strong>
+                    <select name="quoteLength" id="quoteLength">
+                        <option disabled selected value>Select your quote length</option>
+                        <option value="Short">Short</option>
+                        <option value="Medium">A bit longer</option>
+                        <option value="Long">A long quote</option>
+                    </select>
+                </p>
+                 <br> <br>
+                <input type="button" value="Get My Quote" onclick="getQuote()">
+                &nbsp &nbsp &nbsp
+                <input type="button" value="Reset the Form" onclick="resetForm()">
+            </form>
+        </div>
+
+         <div class="flexrow_Column">
+
+            <h1>My Quote</h1>
+            <p id="myQuote"> </p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

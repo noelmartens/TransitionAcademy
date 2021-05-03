@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="BaconipsumEn.js"></script>
+    <link rel="stylesheet" href="BaconipsomEn.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>WebService API <br> Demonstration</h1>
+    <div class="FlexboxRow">
+        <div class="flexrow_Column">
+            <h1>Operands to use</h1>
+            <form name="myForm">
+                <p><strong>Enter the number of paragraphs &nbsp &nbsp </strong>
+                    <select name="numPara" id="numPara">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </p>
+                <p><strong>Select the encryption algorithm &nbsp &nbsp &nbsp </strong>
+                    <select name="encryptionType" id="encryptionType">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </p>
+                <br> <br>
+                <input type="button" value="Get My Baconipsum" onclick="restBacon()">
+                &nbsp &nbsp &nbsp
+                <input type="button" value="Reset the Form" onclick="resetForm()">
+            </form>
+        </div>
+
+        <div class="flexrow_Column">
+            <h1>JSON Returned</h1>
+            <p id="myRawData"> </p>
+
+        </div>
+
+        <div class="flexrow_Column">
+
+            <h1>Formatted Paragraphs</h1>
+            <p id="myFormattedData"> </p>
+
+        </div>
+
+        <div class="flexrow_Column">
+
+            <h1>Encrypted Paragraphs</h1>
+            <p id="myEncryptedData"> </p>
+        </div>
+    </div>
+</body>
+
+</html>

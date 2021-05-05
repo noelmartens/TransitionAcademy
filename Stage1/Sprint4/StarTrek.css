@@ -12,18 +12,10 @@
   backdrop-filter: saturate(180%) blur(20px);
 }
 
-@keyframes animation {
-  00%  {left:0px; top:350px;}
-  10%  {left:200px; top:315px}
-  20%  {left:400px; top:280x}
-  30%  {left:600px; top:245px}
-  40%  {left:800px; top:210px}
-  50%  {left:1000px; top:175px}
-  60%  {left:1200px; top:140px}
-  70%  {left:1400px; top:105px}
-  80%  {left:1600px; top:70px}
-  90%  {left:1800px; top:35px}
-  100%  {left:2000px; top:0px}
+@keyframes leftToRight {
+  0%  { top:350px; left:0px;}
+  100%  {top:0px; left:2100px; }
+
 }
 
 .shipIcon{
@@ -34,10 +26,15 @@
   -webkit-transform: skew(-2deg) rotate(2deg);
   -moz-transform: skew(-2deg) rotate(2deg);
   overflow: hidden;
-  animation-name: animation;
-  animation-duration: 30s;
+  animation-name: leftToRight;
+  animation-name: botToTop;
+  animation-duration: 8s;
   animation-iteration-count: 2;
   
+}
+@keyframes botToTop {
+  80%  {top:0px; left:0px; }
+  100%  {left:2100px; top:350px}
 }
 
 .quote{

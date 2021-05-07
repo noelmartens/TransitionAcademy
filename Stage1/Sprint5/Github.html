@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Practice Challenge</title>
+    <link rel="stylesheet" href="Github.css"> 
+    <script src="Github.js"></script>
+</head>
+<body>
+    <h1>List a User's Github repos</h1>
+    <div class="myflexboxRow">
+        <div class="myflexboxColumn">
+            <label for="userName">What is the name of the Github user?</label>
+            <br>
+            <input type="text" id="userName" name="userName"><br>
+            <input type="button" value="List the repos" onclick="getRepos()">
+        </div>
+        <div class="myflexboxColumn">
+            <h1>User</h1>
+            <p id="myUser"></p>
+            <br /><br />
+            <h1>Repos</h1>
+            <p id="myRepos"></p>
+            <br /><br />
+        </div>
+        
+
+    </div>
+
+</body>
+</html>

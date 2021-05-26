@@ -1,0 +1,13 @@
+G:\Class\Stage1\Sprint11_Interfaces\Investments\obj\Debug\netcoreapp3.1\Investments.csprojAssemblyReference.cache
+G:\Class\Stage1\Sprint11_Interfaces\Investments\obj\Debug\netcoreapp3.1\Investments.AssemblyInfoInputs.cache
+G:\Class\Stage1\Sprint11_Interfaces\Investments\obj\Debug\netcoreapp3.1\Investments.AssemblyInfo.cs
+G:\Class\Stage1\Sprint11_Interfaces\Investments\obj\Debug\netcoreapp3.1\Investments.csproj.CoreCompileInputs.cache
+G:\Class\Stage1\Sprint11_Interfaces\Investments\bin\Debug\netcoreapp3.1\Investments.exe
+G:\Class\Stage1\Sprint11_Interfaces\Investments\bin\Debug\netcoreapp3.1\Investments.deps.json
+G:\Class\Stage1\Sprint11_Interfaces\Investments\bin\Debug\netcoreapp3.1\Investments.runtimeconfig.json
+G:\Class\Stage1\Sprint11_Interfaces\Investments\bin\Debug\netcoreapp3.1\Investments.runtimeconfig.dev.json
+G:\Class\Stage1\Sprint11_Interfaces\Investments\bin\Debug\netcoreapp3.1\Investments.dll
+G:\Class\Stage1\Sprint11_Interfaces\Investments\bin\Debug\netcoreapp3.1\Investments.pdb
+G:\Class\Stage1\Sprint11_Interfaces\Investments\obj\Debug\netcoreapp3.1\Investments.dll
+G:\Class\Stage1\Sprint11_Interfaces\Investments\obj\Debug\netcoreapp3.1\Investments.pdb
+G:\Class\Stage1\Sprint11_Interfaces\Investments\obj\Debug\netcoreapp3.1\Investments.genruntimeconfig.cache

@@ -1,0 +1,9 @@
+G:\Class\Stage1\sprint9_oop\Calculator\CalculatorLibrary\bin\Debug\netcoreapp3.1\CalculatorLibrary.deps.json
+G:\Class\Stage1\sprint9_oop\Calculator\CalculatorLibrary\bin\Debug\netcoreapp3.1\CalculatorLibrary.dll
+G:\Class\Stage1\sprint9_oop\Calculator\CalculatorLibrary\bin\Debug\netcoreapp3.1\CalculatorLibrary.pdb
+G:\Class\Stage1\sprint9_oop\Calculator\CalculatorLibrary\obj\Debug\netcoreapp3.1\CalculatorLibrary.csprojAssemblyReference.cache
+G:\Class\Stage1\sprint9_oop\Calculator\CalculatorLibrary\obj\Debug\netcoreapp3.1\CalculatorLibrary.AssemblyInfoInputs.cache
+G:\Class\Stage1\sprint9_oop\Calculator\CalculatorLibrary\obj\Debug\netcoreapp3.1\CalculatorLibrary.AssemblyInfo.cs
+G:\Class\Stage1\sprint9_oop\Calculator\CalculatorLibrary\obj\Debug\netcoreapp3.1\CalculatorLibrary.csproj.CoreCompileInputs.cache
+G:\Class\Stage1\sprint9_oop\Calculator\CalculatorLibrary\obj\Debug\netcoreapp3.1\CalculatorLibrary.dll
+G:\Class\Stage1\sprint9_oop\Calculator\CalculatorLibrary\obj\Debug\netcoreapp3.1\CalculatorLibrary.pdb

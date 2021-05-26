@@ -1,0 +1,4 @@
+G:\Class\Stage1\Sprint12_testing\PrcingEngineTests\obj\Debug\netcoreapp3.1\PricingEngineTests.csprojAssemblyReference.cache
+G:\Class\Stage1\Sprint12_testing\PrcingEngineTests\obj\Debug\netcoreapp3.1\PricingEngineTests.AssemblyInfoInputs.cache
+G:\Class\Stage1\Sprint12_testing\PrcingEngineTests\obj\Debug\netcoreapp3.1\PricingEngineTests.AssemblyInfo.cs
+G:\Class\Stage1\Sprint12_testing\PrcingEngineTests\obj\Debug\netcoreapp3.1\PricingEngineTests.csproj.CoreCompileInputs.cache

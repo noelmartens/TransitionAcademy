@@ -2,7 +2,6 @@ G:\Class\Stage1\Sprint11_Interfaces\Investments_container\obj\Debug\netcoreapp3.
 G:\Class\Stage1\Sprint11_Interfaces\Investments_container\obj\Debug\netcoreapp3.1\Cars.AssemblyInfoInputs.cache
 G:\Class\Stage1\Sprint11_Interfaces\Investments_container\obj\Debug\netcoreapp3.1\Cars.AssemblyInfo.cs
 G:\Class\Stage1\Sprint11_Interfaces\Investments_container\obj\Debug\netcoreapp3.1\Cars.csproj.CoreCompileInputs.cache
-G:\Class\Stage1\Sprint11_Interfaces\Cars\obj\Debug\netcoreapp3.1\Cars.csprojAssemblyReference.cache
 G:\Class\Stage1\Sprint11_Interfaces\Cars\obj\Debug\netcoreapp3.1\Cars.AssemblyInfoInputs.cache
 G:\Class\Stage1\Sprint11_Interfaces\Cars\obj\Debug\netcoreapp3.1\Cars.AssemblyInfo.cs
 G:\Class\Stage1\Sprint11_Interfaces\Cars\obj\Debug\netcoreapp3.1\Cars.csproj.CoreCompileInputs.cache
@@ -29,3 +28,4 @@ G:\Class\Stage1\Sprint11_Interfaces\Cars\obj\Debug\netcoreapp3.1\Cars.csproj.Cop
 G:\Class\Stage1\Sprint11_Interfaces\Cars\obj\Debug\netcoreapp3.1\Cars.dll
 G:\Class\Stage1\Sprint11_Interfaces\Cars\obj\Debug\netcoreapp3.1\Cars.pdb
 G:\Class\Stage1\Sprint11_Interfaces\Cars\obj\Debug\netcoreapp3.1\Cars.genruntimeconfig.cache
+G:\Class\Stage1\Sprint11_Interfaces\Cars\obj\Debug\netcoreapp3.1\Cars.csproj.AssemblyReference.cache

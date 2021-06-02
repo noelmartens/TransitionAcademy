@@ -1,7 +1,6 @@
 G:\Class\Stage1\Sprint10-mvc\Music-mvc\obj\Debug\netcoreapp3.1\Music-mvc.AssemblyInfoInputs.cache
 G:\Class\Stage1\Sprint10-mvc\Music-mvc\obj\Debug\netcoreapp3.1\Music-mvc.AssemblyInfo.cs
 G:\Class\Stage1\Sprint10-mvc\Music-mvc\obj\Debug\netcoreapp3.1\Music-mvc.csproj.CoreCompileInputs.cache
-G:\Class\Stage1\Sprint10-mvc\Music-mvc\obj\Debug\netcoreapp3.1\Music-mvc.csprojAssemblyReference.cache
 G:\Class\Stage1\Sprint10-mvc\Music-mvc\bin\Debug\netcoreapp3.1\Music-mvc.exe
 G:\Class\Stage1\Sprint10-mvc\Music-mvc\bin\Debug\netcoreapp3.1\Music-mvc.deps.json
 G:\Class\Stage1\Sprint10-mvc\Music-mvc\bin\Debug\netcoreapp3.1\Music-mvc.runtimeconfig.json

@@ -6,7 +6,7 @@ namespace ioc
     {
         static void Main(string[] args)
         {
-            ILogger logger = new DatabaseLogger();
+            ILogger logger = new CloudLogger();
             ProductService productService = new ProductService(logger);
             productService.Log("Hello World!");
            

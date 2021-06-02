@@ -1,4 +1,3 @@
-G:\Class\Stage1\sprint9_oop\MusicCollection\obj\Debug\netcoreapp3.1\MusicCollection.csprojAssemblyReference.cache
 G:\Class\Stage1\sprint9_oop\MusicCollection\obj\Debug\netcoreapp3.1\MusicCollection.AssemblyInfoInputs.cache
 G:\Class\Stage1\sprint9_oop\MusicCollection\obj\Debug\netcoreapp3.1\MusicCollection.AssemblyInfo.cs
 G:\Class\Stage1\sprint9_oop\MusicCollection\obj\Debug\netcoreapp3.1\MusicCollection.csproj.CoreCompileInputs.cache
@@ -11,3 +10,4 @@ G:\Class\Stage1\sprint9_oop\MusicCollection\bin\Debug\netcoreapp3.1\MusicCollect
 G:\Class\Stage1\sprint9_oop\MusicCollection\obj\Debug\netcoreapp3.1\MusicCollection.dll
 G:\Class\Stage1\sprint9_oop\MusicCollection\obj\Debug\netcoreapp3.1\MusicCollection.pdb
 G:\Class\Stage1\sprint9_oop\MusicCollection\obj\Debug\netcoreapp3.1\MusicCollection.genruntimeconfig.cache
+G:\Class\Stage1\sprint9_oop\MusicCollection\obj\Debug\netcoreapp3.1\MusicCollection.csproj.AssemblyReference.cache

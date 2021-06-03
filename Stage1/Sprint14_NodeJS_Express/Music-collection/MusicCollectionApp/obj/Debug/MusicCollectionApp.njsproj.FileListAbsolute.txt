@@ -1,0 +1,3 @@
+G:\Class\Stage1\Sprint14_NodeJS_Express\Music-collection\MusicCollectionApp\obj\Debug\MusicCollectionApp.njsproj.CoreCompileInputs.cache
+G:\Class\Stage1\Sprint14_NodeJS_Express\Music-collection\MusicCollectionApp\bin\Microsoft.NodejsTools.WebRole.dll
+G:\Class\Stage1\Sprint14_NodeJS_Express\Music-collection\MusicCollectionApp\obj\Debug\MusicCollectionApp.njsproj.AssemblyReference.cache

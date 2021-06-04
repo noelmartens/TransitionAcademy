@@ -34,8 +34,6 @@ const albums = [
     { id: 3, group: 'Bob Seger    ', albumName: 'Greatest Hits    ' },
 ]
 
-
-
 app.get('/', (req, res) => {
     res.send('Welcome to your music collection');
 });
@@ -45,10 +43,10 @@ app.get('/', (req, res) => {
 
 app.get('/api/albums', (req, res) => {
     console.log("GET - got to server");
-    list = albums.sort(compare);
+    //list = albums.sort(compare);
     console.log("sending json array");
-    res.send(list);
-    console.log(list);
+    res.send(albums.sort(compare));
+    console.log(albums.sort(compare));
 })
 
 
@@ -56,10 +54,12 @@ app.get('/api/albums', (req, res) => {
 
 app.get('/api/albums/:id', (req, res) => {
     console.log("GET/ID - got to server");
-    const album = albums.find(c => c.id === parseInt(req.params.id));
+    const myAlbum = [];
+    album = albums.find(c => c.id === parseInt(req.params.id));
     if (!album) return res.status(404).send('the album with the given id was not found');
-    console.log("sending json " + album);
-    res.send(album);  // returns parms on url
+    myAlbum.push(album);
+    console.log("sending json " + JSON.stringify(myAlbum));
+    res.send(JSON.stringify(myAlbum));  // returns parms on url
 
 })
 

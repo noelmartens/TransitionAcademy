@@ -20,7 +20,8 @@ function doMenu() {
     if (!errorFound) {
         switch (menuOption) {
             case "1":
-                showAlbums();
+                showAlbums(albumId);
+                //getAlbums(albumId);
                 break;
 
             case "2":
@@ -39,9 +40,15 @@ function doMenu() {
 
 }
 
-async function showAlbums() {
+async function showAlbums(albumId ) {
     // send the API call string by starting with the URL
-    var apiString = domainPrefix + port + "/api/albums";
+    var apiString;
+    if (albumId == "" ||  isNaN(albumId)) {
+        apiString = domainPrefix + port + "/api/albums";
+    } else {
+        apiString = domainPrefix + port + "/api/albums/" + albumId;
+    };
+    //var apiString = domainPrefix + port + "/api/albums";
 
 
     const response = await fetch(apiString);
@@ -68,6 +75,11 @@ async function showAlbums() {
         document.getElementById("myCollection").innerHTML += "<p>" +
             JSON.stringify(jsonData[para]) + "</p>";
     }
+    //const myArray = JSON.parse(jsonData);
+    //for (var para in myArray) {
+    //    document.getElementById("myCollection").innerHTML += "<p>" +
+    //        JSON.stringify(myArray[para]) + "</p>";
+    //}
 }
 
 
@@ -76,19 +88,19 @@ async function addAlbums(albumId, groupName, albumName) {
     var apiString = domainPrefix + port + "/api/albums";
     // Creating a XHR object
     let http = new XMLHttpRequest();
-    let url = apiString;
-    http.open("POST", url, true);
-    http.setRequestHeader("Content-Type", "application/json");
     // Create a state change callback
     http.onreadystatechange = function () {
         if (http.readyState === 4 && http.status === 200) {
-
             // Print received data from server
             var result = this.responseText;
             alert(result);
-
         }
     };
+    let url = apiString;
+    http.open("POST", url, true);
+    http.setRequestHeader("Content-Type", "application/json");
+
+
 
     // Converting JSON data to string
     // albumID is optional and can be empty
@@ -101,20 +113,22 @@ async function addAlbums(albumId, groupName, albumName) {
         var data = JSON.stringify({
             "id": parseInt(albumId),
             "group": groupName,
-            "albumName": albumName})
+            "albumName": albumName
+        })
     };
 
 
     // Sending data with the request
     http.send(data);
-    http.onreadystatechange = function () {
+/*    http.onreadystatechange = function () {
         if (http.readyState === 4 && http.status === 200) {
             // Print received data from server
             var result = this.responseText;
             alert(result);
 
         }
-    };
+    };*/
+    //getAlbums();
     showAlbums();
 }
 
@@ -123,34 +137,36 @@ async function updateAlbums(albumId, groupName, albumName) {
     var apiString = domainPrefix + port + "/api/albums/" + albumId;
     // Creating a XHR object
     let http = new XMLHttpRequest();
-    let url = apiString;
-    http.open("PUT", url, true);
-    http.setRequestHeader("Content-Type", "application/json");
+
     // Create a state change callback
     http.onreadystatechange = function () {
         if (http.readyState === 4 && http.status === 200) {
-
             // Print received data from server
             var result = this.responseText;
             alert(result);
-
         }
     };
+    let url = apiString;
+    http.open("PUT", url, true);
+    http.setRequestHeader("Content-Type", "application/json");
+
+
 
     // Converting JSON data to string
     var data = JSON.stringify({ "group": groupName, "albumName": albumName });
 
     // Sending data with the request
     http.send(data);
-    http.onreadystatechange = function () {
+ /*   http.onreadystatechange = function () {
         if (http.readyState === 4 && http.status === 200) {
             // Print received data from server
             var result = this.responseText;
             alert(result);
 
         }
-    };
+    }; */
     showAlbums();
+    //getAlbums();
 }
 
 async function deleteAlbums(albumId) {
@@ -158,41 +174,91 @@ async function deleteAlbums(albumId) {
     var apiString = domainPrefix + port + "/api/albums/" + albumId;
     // Creating a XHR object
     let http = new XMLHttpRequest();
+    // Create a state change callback
+    http.onreadystatechange = function () {
+        if (http.readyState === 4 && http.status === 200) {
+            // Print received data from server
+            var result = this.responseText;
+            alert(result);
+        }
+    };
     let url = apiString;
     http.open("DELETE", url, true);
     http.setRequestHeader("Content-Type", "application/json");
+
+
+
+    // Sending the request no parms needed for delete
+    http.send();
+   /* http.onreadystatechange = function () {
+        if (http.readyState === 4 && http.status === 200) {
+            // Print received data from server
+            var result = this.responseText;
+            alert(result);
+
+        }
+    };*/
+    showAlbums();
+    //getAlbums();
+}
+
+async function getAlbums(albumId) {
+    // send the API call string by starting with the URL
+    var apiString;
+    if (albumId == "") {
+        apiString = domainPrefix + port + "/api/albums";
+    } else {
+        apiString = domainPrefix + port + "/api/albums/" + albumId;
+    };
+
+    // Creating a XHR object
+    let http = new XMLHttpRequest();
+    var result;
     // Create a state change callback
     http.onreadystatechange = function () {
         if (http.readyState === 4 && http.status === 200) {
 
             // Print received data from server
-            var result = this.responseText;
+            result = this.responseText;
             alert(result);
-
         }
     };
 
-    // Sending the request no parms needed for delete
+    let url = apiString;
+    http.open("GET", url, true);
+    http.setRequestHeader("Content-Type", "application/json");
+
+
+
+    // Sending data with the request
+    //var result;
     http.send();
-    http.onreadystatechange = function () {
+    showTheCollection(result);
+    /*http.onreadystatechange = function () {
         if (http.readyState === 4 && http.status === 200) {
             // Print received data from server
-            var result = this.responseText;
+            result = this.response;
             alert(result);
-
+            showTheCollection(result);
         }
-    };
-    showAlbums();
+    };*/
+
+    //var jsonData = await response.json();
+    //if (!response.ok) {
+    //    const message = `an error has occurred: ${response.status}`
+    //    throw new Error(message);
+    //}
+
+    //  reset the collection view
+
 }
+
 
 function validateOptions(menuOption, albumId, groupName, albumName) {
     errorFound = false;
 
     if (menuOption == 1) {
-        if (albumId > '') {
-            errorFound = true;
-            alert('Album id is not allowed now');
-        } else if (groupName > '') {
+        if (groupName > '') {
             errorFound = true;
             alert('Group name is not allowed now');
         } else if (albumName > '') {
@@ -226,5 +292,21 @@ function validateOptions(menuOption, albumId, groupName, albumName) {
             errorFound = true;
             alert('Album name is not allowed now');
         }
+    }
+}
+
+
+function showTheCollection(result) {
+    document.getElementById("myCollection").innerHTML = "";
+
+
+    // loop through the JSON object one paragraph at a time and print each in the FormattedData section
+    document.getElementById("myCollection").innerHTML += "<p>" +
+        "<strong>" + "Your collection contains, these albums"
+    "</strong>" + "</p>";
+    const myArray = JSON.parse(result);
+    for (var para in myArray) {
+        document.getElementById("myCollection").innerHTML += "<p>" +
+            JSON.stringify(myArray[para]) + "</p>";
     }
 }

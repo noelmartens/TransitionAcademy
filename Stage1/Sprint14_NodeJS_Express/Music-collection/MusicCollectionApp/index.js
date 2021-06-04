@@ -94,6 +94,7 @@ async function addAlbums(albumId, groupName, albumName) {
             // Print received data from server
             var result = this.responseText;
             alert(result);
+            showAlbums();
         }
     };
     let url = apiString;
@@ -144,6 +145,7 @@ async function updateAlbums(albumId, groupName, albumName) {
             // Print received data from server
             var result = this.responseText;
             alert(result);
+            showAlbums();
         }
     };
     let url = apiString;
@@ -180,6 +182,7 @@ async function deleteAlbums(albumId) {
             // Print received data from server
             var result = this.responseText;
             alert(result);
+            showAlbums();
         }
     };
     let url = apiString;
@@ -221,6 +224,7 @@ async function getAlbums(albumId) {
             // Print received data from server
             result = this.responseText;
             alert(result);
+            showAlbums();
         }
     };
 

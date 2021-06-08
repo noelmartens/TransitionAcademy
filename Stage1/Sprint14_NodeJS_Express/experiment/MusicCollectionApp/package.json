@@ -1,0 +1,9 @@
+{
+  "name": "music-collection-app",
+  "version": "0.0.0",
+  "description": "MusicCollectionApp",
+  "main": "index.js",
+  "author": {
+    "name": ""
+  }
+}

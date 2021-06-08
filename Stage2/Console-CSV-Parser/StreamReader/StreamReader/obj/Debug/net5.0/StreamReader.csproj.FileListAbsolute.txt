@@ -1,0 +1,15 @@
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\obj\Debug\net5.0\StreamReader.GeneratedMSBuildEditorConfig.editorconfig
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\obj\Debug\net5.0\StreamReader.AssemblyInfoInputs.cache
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\obj\Debug\net5.0\StreamReader.AssemblyInfo.cs
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\obj\Debug\net5.0\StreamReader.csproj.CoreCompileInputs.cache
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\bin\Debug\net5.0\StreamReader.exe
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\bin\Debug\net5.0\StreamReader.deps.json
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\bin\Debug\net5.0\StreamReader.runtimeconfig.json
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\bin\Debug\net5.0\StreamReader.runtimeconfig.dev.json
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\bin\Debug\net5.0\StreamReader.dll
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\bin\Debug\net5.0\ref\StreamReader.dll
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\bin\Debug\net5.0\StreamReader.pdb
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\obj\Debug\net5.0\StreamReader.dll
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\obj\Debug\net5.0\ref\StreamReader.dll
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\obj\Debug\net5.0\StreamReader.pdb
+G:\Class\Stage2\Console-CSV-Parser\StreamReader\StreamReader\obj\Debug\net5.0\StreamReader.genruntimeconfig.cache

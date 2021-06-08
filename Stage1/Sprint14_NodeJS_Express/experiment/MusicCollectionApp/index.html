@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>MusicCollection</title>
+</head>
+
+<body onload="showAlbums()">
+    <h1>My Music Collection</h1>
+    <p style="font-size:20px">This page lets you add albums to a collection. Choose an option below</p>
+    <br>
+ 
+    <div class="FlexboxRow">
+        <div class="flexrow_Column">
+            <form name="myForm">
+                <h1>Menu Options</h1>
+                <p style="font-size:25px">
+                    1) show the collection <br>
+                    2) add album to the collection <br>
+                    3) update an album in the collection<br>
+                    4) remove an album from the collection <br></p>
+
+                    <label for="menuOption">Option............:</label>
+                    <input type="text" id="menuOption" size="1" name="option"><br><br>
+
+                    <label for="albumId">Album ID......:</label>
+                    <input type="text" id="albumId" size="1" name="albumId"><br><br>
+
+                    <label for="groupName">Group............:</label>
+                    <input type="text" id="groupName" size="30" name="groupName"><br><br>
+
+                    <label for="albumName">Album name..:</label>
+                    <input type="text" id="albumName" size="30" name="albumName"><br><br>
+                    <button type="button" onclick="doMenu()">Process request</button>
+                
+            </form>
+        </div>
+
+        <div class="flexrow_Column">
+            <table id="myCollection">
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

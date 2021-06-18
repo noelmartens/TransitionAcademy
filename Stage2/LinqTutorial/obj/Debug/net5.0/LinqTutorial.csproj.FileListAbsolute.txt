@@ -1,0 +1,16 @@
+G:\Class\Stage2\LinqTutorial\bin\Debug\net5.0\LinqTutorial.exe
+G:\Class\Stage2\LinqTutorial\bin\Debug\net5.0\LinqTutorial.deps.json
+G:\Class\Stage2\LinqTutorial\bin\Debug\net5.0\LinqTutorial.runtimeconfig.json
+G:\Class\Stage2\LinqTutorial\bin\Debug\net5.0\LinqTutorial.runtimeconfig.dev.json
+G:\Class\Stage2\LinqTutorial\bin\Debug\net5.0\LinqTutorial.dll
+G:\Class\Stage2\LinqTutorial\bin\Debug\net5.0\ref\LinqTutorial.dll
+G:\Class\Stage2\LinqTutorial\bin\Debug\net5.0\LinqTutorial.pdb
+G:\Class\Stage2\LinqTutorial\obj\Debug\net5.0\LinqTutorial.csproj.AssemblyReference.cache
+G:\Class\Stage2\LinqTutorial\obj\Debug\net5.0\LinqTutorial.GeneratedMSBuildEditorConfig.editorconfig
+G:\Class\Stage2\LinqTutorial\obj\Debug\net5.0\LinqTutorial.AssemblyInfoInputs.cache
+G:\Class\Stage2\LinqTutorial\obj\Debug\net5.0\LinqTutorial.AssemblyInfo.cs
+G:\Class\Stage2\LinqTutorial\obj\Debug\net5.0\LinqTutorial.csproj.CoreCompileInputs.cache
+G:\Class\Stage2\LinqTutorial\obj\Debug\net5.0\LinqTutorial.dll
+G:\Class\Stage2\LinqTutorial\obj\Debug\net5.0\ref\LinqTutorial.dll
+G:\Class\Stage2\LinqTutorial\obj\Debug\net5.0\LinqTutorial.pdb
+G:\Class\Stage2\LinqTutorial\obj\Debug\net5.0\LinqTutorial.genruntimeconfig.cache

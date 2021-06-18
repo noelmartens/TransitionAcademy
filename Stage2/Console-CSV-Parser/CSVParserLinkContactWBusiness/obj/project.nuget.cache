@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "eMAVls2wIEyIv8yERg9lAhb1tqYURmUUUNHdAaaiKewqsPt6w3w1dwmvMdRWOzOxb470um7CbEeIkhYvFm8MIA==",
+  "success": true,
+  "projectFilePath": "G:\\Class\\Stage2\\Console-CSV-Parser\\CSVParserLinkContactWBusiness\\CSVParserLinkContactWBusiness.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NMartens\\.nuget\\packages\\csvhelper\\27.1.0\\csvhelper.27.1.0.nupkg.sha512",
+    "C:\\Users\\NMartens\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

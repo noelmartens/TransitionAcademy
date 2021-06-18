@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "f8X/6/wxVQVHd/qWVjbuXixK4TB1Pp69pMTXGQ5rnJziQDpOFAzwDqv73iQyBrFemWka3CA/8u+Q3wuvqS4PYA==",
+  "success": true,
+  "projectFilePath": "G:\\Class\\Stage2\\Console-CSV-Parser\\JSONParserWHeight\\ConsoleApp1\\JSONParser.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NMartens\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,16 @@
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\bin\Debug\net5.0\XMLParser.exe
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\bin\Debug\net5.0\XMLParser.deps.json
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\bin\Debug\net5.0\XMLParser.runtimeconfig.json
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\bin\Debug\net5.0\XMLParser.runtimeconfig.dev.json
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\bin\Debug\net5.0\XMLParser.dll
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\bin\Debug\net5.0\ref\XMLParser.dll
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\bin\Debug\net5.0\XMLParser.pdb
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\obj\Debug\net5.0\XMLParser.GeneratedMSBuildEditorConfig.editorconfig
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\obj\Debug\net5.0\XMLParser.AssemblyInfoInputs.cache
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\obj\Debug\net5.0\XMLParser.AssemblyInfo.cs
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\obj\Debug\net5.0\XMLParser.csproj.CoreCompileInputs.cache
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\obj\Debug\net5.0\XMLParser.dll
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\obj\Debug\net5.0\ref\XMLParser.dll
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\obj\Debug\net5.0\XMLParser.pdb
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\obj\Debug\net5.0\XMLParser.genruntimeconfig.cache
+G:\Class\Stage2\Console-CSV-Parser\XMLParser\XMLParser\obj\Debug\net5.0\XMLParser.csproj.AssemblyReference.cache

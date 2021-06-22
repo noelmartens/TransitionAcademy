@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4DYCMECtPH0gx26LV2kCr5KqhBgu+1xZmKcqqN3HoMTusR2azF4GXbYTnkaSHNc+aYpej3bpyg8RoHkpoPcW4A==",
+  "success": true,
+  "projectFilePath": "G:\\Class\\Stage2\\Console-CSV-Parser\\ContactSearch\\ContactSearch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NMartens\\.nuget\\packages\\csvhelper\\27.1.0\\csvhelper.27.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

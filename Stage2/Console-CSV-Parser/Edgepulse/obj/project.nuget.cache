@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hiK8luPyHNPnV3hwzDMeEg2yJwVXjRCJnv3XiB5rS+EVdt5HjYJeKalmCfyRUT0wG7sqqn97Wf0SX1Es5PP9mg==",
+  "success": true,
+  "projectFilePath": "G:\\Class\\Stage2\\Console-CSV-Parser\\Edgepulse\\EdgepulseExercise.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NMartens\\.nuget\\packages\\csvhelper\\27.1.0\\csvhelper.27.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

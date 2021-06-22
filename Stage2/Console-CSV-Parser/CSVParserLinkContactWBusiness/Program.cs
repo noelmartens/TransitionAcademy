@@ -16,16 +16,16 @@ namespace CSVParserLinkContactWBusiness
             var contactDictionary = BuildContactDictionary();
             var businessDictionary = BuildBusinessDictionary();
             var links = ReadLinks();
- 
-            foreach (var link in links)
+
+            
+             foreach (var link in links)
             {
 
                 try
                 {
-                    // pull the business matching the sorted link array
-                    var business2 = businessDictionary[link.BusinessId];
-                    var contact2 = contactDictionary[link.ContactId];
-                    business2.Contacts.Add(contact2);
+                    var business = businessDictionary[link.BusinessId];
+                    var contact = contactDictionary[link.ContactId];
+                    business.Contacts.Add(contact);
 
                 }
                 catch (Exception e)
@@ -36,20 +36,23 @@ namespace CSVParserLinkContactWBusiness
 
                
             }
- 
+
+           
             var businessWMoreThan1 = 0;
             var businessWMoreThan50 = 0;
             foreach (var b in businessDictionary.Values)
             {
                 if (b.Contacts.Count > 0)
                 {
-                    businessWMoreThan1++;
+                    businessWMoreThan1++;                  
                 }
                 if (b.Contacts.Count > 50)
                 {
                     businessWMoreThan50++;
                 }
             }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
             Console.WriteLine("business w more than 01  " + businessWMoreThan1);
             Console.WriteLine("business w more than 50  " + businessWMoreThan50);
         }

@@ -1,0 +1,22 @@
+@startuml
+class CatalogAccessorTests {
+    + CatalogAccessor_Find_FindNone() : void
+    + CatalogAccessor_FindAllProductsForCatalog_None() : void
+    + CatalogAccessor_FindAllProduct_None() : void
+    + CatalogAccessor_Catalog_CRUD() : void
+    + CatalogAccessor_Catalog_NoSellerId() : void
+    + CatalogAccessor_Catalog_Delete() : void
+    + CatalogAccessor_FindAllSellerCatalogs() : void
+    + CatalogAccessor_SaveCatalogSellerIdMismatch() : void
+    + CatalogAccessor_ShowCatalog() : void
+    + CatalogAccessor_ShowCatalog_BadSeller() : void
+    + CatalogAccessor_Product_CRUD() : void
+    + CatalogAccessor_Product_NoCatalogId() : void
+    + CatalogAccessor_Product_Save_Null_Exception() : void
+    + CatalogAccessor_Product_Save_Mismatch_Exception() : void
+    + CatalogAccessor_Product_Delete_ContextId_Exception() : void
+    + CatalogAccessor_Product_Delete_Null_Exception() : void
+    + CatalogAccessor_SaveProductCatalogIdMismatch() : void
+}
+DbTestAccessorBase <|-- CatalogAccessorTests
+@enduml

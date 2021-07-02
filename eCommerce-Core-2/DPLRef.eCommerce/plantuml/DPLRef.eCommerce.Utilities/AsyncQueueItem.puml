@@ -1,0 +1,7 @@
+@startuml
+class AsyncQueueItem {
+    + EventId : int <<get>> <<set>>
+}
+AsyncQueueItem --> "AmbientContext" AmbientContext
+AsyncQueueItem --> "EventType" AsyncEventTypes
+@enduml

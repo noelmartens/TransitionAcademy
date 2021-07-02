@@ -1,0 +1,7 @@
+@startuml
+interface INotificationManager {
+    SendNewOrderNotices(orderId:int) : NotificationResponse
+    SendOrderFulfillmentNotices(orderId:int) : NotificationResponse
+}
+IServiceContractBase <|-- INotificationManager
+@enduml

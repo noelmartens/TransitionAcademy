@@ -1,0 +1,9 @@
+@startuml
+class PricingEngineTests {
+    + PricingEngine_GenerateCartPricingInvalidProducId() : void
+    + PricingEngine_GenerateCartPricingInvalidQuantity() : void
+    + PricingEngine_GenerateCartPricing() : void
+}
+EngineTestBase <|-- PricingEngineTests
+PricingEngineTests o-> "mockData" MockData
+@enduml

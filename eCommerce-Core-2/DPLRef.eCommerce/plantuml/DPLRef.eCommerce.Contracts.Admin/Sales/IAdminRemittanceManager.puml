@@ -1,0 +1,6 @@
+@startuml
+interface IAdminRemittanceManager {
+    Totals() : SalesTotalsResponse
+}
+IServiceContractBase <|-- IAdminRemittanceManager
+@enduml

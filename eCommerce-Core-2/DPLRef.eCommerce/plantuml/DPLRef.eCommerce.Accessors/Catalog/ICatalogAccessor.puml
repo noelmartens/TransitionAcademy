@@ -1,0 +1,13 @@
+@startuml
+interface ICatalogAccessor {
+    Find(catalogId:int) : WebStoreCatalog
+    SaveCatalog(catalog:WebStoreCatalog) : WebStoreCatalog
+    DeleteCatalog(id:int) : void
+    FindAllSellerCatalogs() : WebStoreCatalog[]
+    FindAllProductsForCatalog(catalogId:int) : Product[]
+    FindProduct(id:int) : Product
+    SaveProduct(catalogId:int, product:Product) : Product
+    DeleteProduct(catalogId:int, id:int) : void
+}
+IServiceContractBase <|-- ICatalogAccessor
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class SalesTotalsResponse {
+    + OrderCount : int <<get>> <<set>>
+    + OrderTotal : decimal <<get>> <<set>>
+}
+ResponseBase <|-- SalesTotalsResponse
+@enduml

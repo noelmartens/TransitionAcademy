@@ -1,0 +1,24 @@
+@startuml
+class Order {
+    + Id : int <<get>> <<set>>
+    + SubTotal : decimal <<get>> <<set>>
+    + TaxAmount : decimal <<get>> <<set>>
+    + Total : decimal <<get>> <<set>>
+    + AuthorizationCode : string <<get>> <<set>>
+    + ShippingProvider : string <<get>> <<set>>
+    + TrackingCode : string <<get>> <<set>>
+    + Notes : string <<get>> <<set>>
+    + SellerId : int <<get>> <<set>>
+}
+class OrderLine {
+    + ProductId : int <<get>> <<set>>
+    + ProductName : string <<get>> <<set>>
+    + Quantity : int <<get>> <<set>>
+    + UnitPrice : decimal <<get>> <<set>>
+    + ExtendedPrice : decimal <<get>> <<set>>
+}
+Order --> "BillingAddress" Address
+Order --> "ShippingAddress" Address
+Order --> "Status" OrderStatuses
+Order --> "FromCartId" Guid
+@enduml

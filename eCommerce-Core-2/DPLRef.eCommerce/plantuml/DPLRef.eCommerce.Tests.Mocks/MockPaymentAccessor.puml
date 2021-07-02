@@ -1,0 +1,10 @@
+@startuml
+class MockPaymentAccessor {
+    + MockPaymentAccessor(data:MockData)
+    + Authorize(paymentInstrument:PaymentInstrument, orderId:int, total:decimal) : PaymentAuthStatusResult
+    + Capture(authorizationCode:string) : PaymentCaptureResult
+    + TestMe(input:string) : string
+}
+MockBase <|-- MockPaymentAccessor
+IPaymentAccessor <|-- MockPaymentAccessor
+@enduml

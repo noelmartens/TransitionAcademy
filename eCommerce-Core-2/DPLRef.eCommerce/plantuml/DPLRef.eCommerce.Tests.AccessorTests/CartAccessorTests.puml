@@ -1,0 +1,16 @@
+@startuml
+class CartAccessorTests {
+    + CartAccessor_Find_FindNone() : void
+    + CartAccessor_Find_FindOne() : void
+    + CartAccessor_SaveShipping() : void
+    + CartAccessor_SaveBilling() : void
+    + CartAccessor_SaveShippingAndBilling() : void
+    + CartAccessor_SaveCartItem_Single() : void
+    + CartAccessor_SaveCartItem_Double() : void
+    + CartAccesor_SaveCartItem_NoAddress() : void
+    + CartAccesor_RemoveItem_WithCartItems() : void
+    + CartAccessor_RemoveItem_NoCartItems() : void
+}
+DbTestAccessorBase <|-- CartAccessorTests
+CartAccessorTests o-> "billing" Address
+@enduml

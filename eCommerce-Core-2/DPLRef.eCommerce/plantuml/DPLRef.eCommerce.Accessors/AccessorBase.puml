@@ -1,0 +1,6 @@
+@startuml
+abstract class AccessorBase {
+}
+ServiceContractBase <|-- AccessorBase
+AccessorBase --> "UtilityFactory" UtilityFactory
+@enduml

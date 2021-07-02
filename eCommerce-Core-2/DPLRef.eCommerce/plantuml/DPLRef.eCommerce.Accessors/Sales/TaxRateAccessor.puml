@@ -1,0 +1,11 @@
+@startuml
+interface ITaxRateAccessor {
+    Rate(address:Address) : decimal
+}
+class TaxRateAccessor {
+    + Rate(address:Address) : decimal
+}
+IServiceContractBase <|-- ITaxRateAccessor
+AccessorBase <|-- TaxRateAccessor
+ITaxRateAccessor <|-- TaxRateAccessor
+@enduml

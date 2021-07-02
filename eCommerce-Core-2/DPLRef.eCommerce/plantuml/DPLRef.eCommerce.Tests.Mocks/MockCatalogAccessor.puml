@@ -1,0 +1,16 @@
+@startuml
+class MockCatalogAccessor {
+    + MockCatalogAccessor(data:MockData)
+    + DeleteCatalog(id:int) : void
+    + DeleteProduct(catalogId:int, id:int) : void
+    + Find(catalogId:int) : WebStoreCatalog
+    + FindAllProductsForCatalog(catalogId:int) : Product[]
+    + FindAllSellerCatalogs() : WebStoreCatalog[]
+    + FindProduct(id:int) : Product
+    + SaveCatalog(catalog:WebStoreCatalog) : WebStoreCatalog
+    + SaveProduct(catalogId:int, product:Product) : Product
+    + TestMe(input:string) : string
+}
+MockBase <|-- MockCatalogAccessor
+ICatalogAccessor <|-- MockCatalogAccessor
+@enduml

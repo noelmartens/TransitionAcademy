@@ -1,0 +1,6 @@
+@startuml
+class WebStoreCatalogResponse {
+}
+ResponseBase <|-- WebStoreCatalogResponse
+WebStoreCatalogResponse --> "Catalog" WebStoreCatalog
+@enduml

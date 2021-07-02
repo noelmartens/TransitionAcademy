@@ -1,0 +1,11 @@
+@startuml
+class RemittanceManagerTests {
+    + SetupMockUtilityFactory() : UtilityFactory
+    + RemittanceManager_BackOffice_Totals() : void
+    + RemittanceManager_BackOffice_Totals_Auth() : void
+    + RemittanceManager_BackOffice_Totals_NoResults() : void
+    + RemittanceManager_Totals() : void
+    + RemittanceManager_Totals_Auth() : void
+    + RemittanceManager_Totals_NoResults() : void
+}
+@enduml

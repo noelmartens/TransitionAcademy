@@ -1,0 +1,6 @@
+@startuml
+interface ITaxCalculationEngine {
+    CalculateCartTax(cart:WebStoreCart) : WebStoreCart
+}
+IServiceContractBase <|-- ITaxCalculationEngine
+@enduml

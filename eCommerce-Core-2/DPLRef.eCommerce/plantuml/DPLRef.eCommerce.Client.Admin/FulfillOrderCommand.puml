@@ -1,0 +1,7 @@
+@startuml
+class FulfillOrderCommand {
+    + FulfillOrderCommand(ambientContext:AmbientContext)
+    + <<override>> Name : string <<get>>
+}
+BaseUICommand <|-- FulfillOrderCommand
+@enduml

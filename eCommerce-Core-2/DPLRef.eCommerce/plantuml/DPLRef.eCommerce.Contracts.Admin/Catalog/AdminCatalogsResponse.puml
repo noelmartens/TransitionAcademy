@@ -1,0 +1,5 @@
+@startuml
+class AdminCatalogsResponse {
+}
+ResponseBase <|-- AdminCatalogsResponse
+@enduml

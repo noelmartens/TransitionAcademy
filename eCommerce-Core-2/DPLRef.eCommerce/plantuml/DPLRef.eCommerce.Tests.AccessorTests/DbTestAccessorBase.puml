@@ -1,0 +1,9 @@
+@startuml
+abstract class DbTestAccessorBase {
+    + DbTestAccessorBase()
+    + Init() : void
+    + Cleanup() : void
+    + {static} CreateGlobalContext() : void
+    + {static} CancelGlobalTransaction() : void
+}
+@enduml

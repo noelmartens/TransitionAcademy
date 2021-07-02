@@ -1,0 +1,9 @@
+@startuml
+class MockRemittanceAccessor {
+    + MockRemittanceAccessor(data:MockData)
+    + SalesTotal() : SellerOrderData[]
+    + TestMe(input:string) : string
+}
+MockBase <|-- MockRemittanceAccessor
+IRemittanceAccessor <|-- MockRemittanceAccessor
+@enduml

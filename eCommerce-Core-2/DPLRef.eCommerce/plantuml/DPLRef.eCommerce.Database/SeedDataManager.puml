@@ -1,0 +1,26 @@
+@startuml
+class SeedDataManager {
+    + SeedDataManager(accessor:ISeedDataAccessor)
+    + Add() : void
+    CreateSeller(username:string, name:string) : int
+    CreateCatalog(sellerId:int, catalogName:string) : int
+    CreateCarProducts(catalogId:int, carFile:string) : void
+    CreateMovieProducts(catalogId:int) : void
+    LoadText(filename:string) : string
+}
+class Car {
+    + Id : int <<get>> <<set>>
+    + Make : string <<get>> <<set>>
+    + Model : string <<get>> <<set>>
+    + Year : string <<get>> <<set>>
+}
+class Movie {
+    + Id : int <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Genre : string <<get>> <<set>>
+}
+SeedDataManager --> "_accessor" ISeedDataAccessor
+SeedDataManager o-> "_random" Random
+SeedDataManager +-- Car
+SeedDataManager +-- Movie
+@enduml

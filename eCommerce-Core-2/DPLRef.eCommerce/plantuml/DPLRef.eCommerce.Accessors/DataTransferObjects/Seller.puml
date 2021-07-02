@@ -1,0 +1,11 @@
+@startuml
+class Seller {
+    + Id : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + OrderNotificationEmail : string <<get>> <<set>>
+    + BankRoutingNumber : int <<get>> <<set>>
+    + BankAccountNumber : int <<get>> <<set>>
+    + IsApproved : bool <<get>> <<set>>
+    + UserName : string <<get>> <<set>>
+}
+@enduml

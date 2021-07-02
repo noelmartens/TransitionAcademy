@@ -1,0 +1,7 @@
+@startuml
+class ShippingAccessorTests {
+    + ShippingAccessor_RequestShipping() : void
+    + ShippingAccessor_RequestShippingFail() : void
+}
+DbTestAccessorBase <|-- ShippingAccessorTests
+@enduml

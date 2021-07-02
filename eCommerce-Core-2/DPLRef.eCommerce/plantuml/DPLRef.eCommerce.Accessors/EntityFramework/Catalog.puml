@@ -1,0 +1,16 @@
+@startuml
+class Catalog {
+    + Catalog()
+    + Id : int <<get>> <<set>>
+    + SellerId : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + IsApproved : bool <<get>> <<set>>
+}
+class CatalogExtended {
+    + SellerName : string <<get>> <<set>>
+}
+Catalog o-> "CreatedAt" DateTimeOffset
+Catalog o-> "UpdatedAt" DateTimeOffset
+CatalogExtended --> "Catalog" Catalog
+@enduml

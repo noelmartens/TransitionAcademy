@@ -1,0 +1,25 @@
+@startuml
+class Cart {
+    + Cart()
+    + CatalogId : int <<get>> <<set>>
+    + BillingFirst : string <<get>> <<set>>
+    + BillingLast : string <<get>> <<set>>
+    + BillingEmailAddress : string <<get>> <<set>>
+    + BillingAddr1 : string <<get>> <<set>>
+    + BillingAddr2 : string <<get>> <<set>>
+    + BillingCity : string <<get>> <<set>>
+    + BillingState : string <<get>> <<set>>
+    + BillingPostal : string <<get>> <<set>>
+    + ShippingFirst : string <<get>> <<set>>
+    + ShippingLast : string <<get>> <<set>>
+    + ShippingEmailAddress : string <<get>> <<set>>
+    + ShippingAddr1 : string <<get>> <<set>>
+    + ShippingAddr2 : string <<get>> <<set>>
+    + ShippingCity : string <<get>> <<set>>
+    + ShippingState : string <<get>> <<set>>
+    + ShippingPostal : string <<get>> <<set>>
+}
+Cart --> "Id" Guid
+Cart o-> "CreatedAt" DateTimeOffset
+Cart o-> "UpdatedAt" DateTimeOffset
+@enduml

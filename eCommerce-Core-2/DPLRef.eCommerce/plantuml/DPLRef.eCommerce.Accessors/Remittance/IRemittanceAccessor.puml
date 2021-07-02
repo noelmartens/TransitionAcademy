@@ -1,0 +1,6 @@
+@startuml
+interface IRemittanceAccessor {
+    SalesTotal() : SellerOrderData[]
+}
+IServiceContractBase <|-- IRemittanceAccessor
+@enduml

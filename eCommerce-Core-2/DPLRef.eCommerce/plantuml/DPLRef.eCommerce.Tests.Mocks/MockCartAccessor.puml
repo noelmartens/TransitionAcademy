@@ -1,0 +1,13 @@
+@startuml
+class MockCartAccessor {
+    + MockCartAccessor(data:MockData)
+    + DeleteCart(catalogId:int) : bool
+    + SaveBillingInfo(catalogId:int, billingAddress:Address) : Cart
+    + SaveCartItem(catalogId:int, productId:int, quantity:int) : Cart
+    + SaveShippingInfo(catalogId:int, shippingAddress:Address) : Cart
+    + ShowCart(catalogId:int) : Cart
+    + TestMe(input:string) : string
+}
+MockBase <|-- MockCartAccessor
+ICartAccessor <|-- MockCartAccessor
+@enduml

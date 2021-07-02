@@ -1,0 +1,25 @@
+@startuml
+class AdminTests {
+    + Admin_FindCatalogs() : void
+    + Admin_FindCatalogsNoAuth() : void
+    + Admin_ShowCatalog() : void
+    + Admin_ShowCatalogNotFound() : void
+    + Admin_ShowCatalogNoAuth() : void
+    + Admin_SaveCatalogUpdate() : void
+    + Admin_SaveCatalogNew() : void
+    + Admin_SaveCatalogSellerIdMismatch() : void
+    + Admin_ShowProduct() : void
+    + Admin_ShowProductNotFound() : void
+    + Admin_ShowProductNotFound_SecurityCatalog() : void
+    + Admin_ShowProductNotFound_SecuritySeller() : void
+    + Admin_ShowProductNoAuth() : void
+    + Admin_SaveProductUpdate() : void
+    + Admin_SaveProductNew() : void
+    + Admin_SaveProductNoAuth() : void
+    + Admin_SaveProductCatalogIdMismatch() : void
+    + Admin_OrderFulfillment() : void
+    + Admin_OrderFulfillmentFailure() : void
+}
+IntegrationTestBase <|-- AdminTests
+AdminTests o-> "mockData" MockData
+@enduml

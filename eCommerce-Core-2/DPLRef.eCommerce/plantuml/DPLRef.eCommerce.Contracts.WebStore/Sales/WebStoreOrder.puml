@@ -1,0 +1,20 @@
+@startuml
+class WebStoreOrder {
+    + Id : int <<get>> <<set>>
+    + SubTotal : decimal <<get>> <<set>>
+    + TaxAmount : decimal <<get>> <<set>>
+    + Total : decimal <<get>> <<set>>
+    + AuthorizationCode : string <<get>> <<set>>
+}
+class WebStoreOrderLine {
+    + ProductId : int <<get>> <<set>>
+    + ProductName : string <<get>> <<set>>
+    + Quantity : int <<get>> <<set>>
+    + UnitPrice : decimal <<get>> <<set>>
+    + ExtendedPrice : decimal <<get>> <<set>>
+}
+WebStoreOrder --> "BillingAddress" Address
+WebStoreOrder --> "ShippingAddress" Address
+WebStoreOrder --> "Status" OrderStatuses
+WebStoreOrder --> "FromCartId" Guid
+@enduml

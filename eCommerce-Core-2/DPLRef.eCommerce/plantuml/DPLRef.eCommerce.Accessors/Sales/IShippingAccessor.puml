@@ -1,0 +1,6 @@
+@startuml
+interface IShippingAccessor {
+    RequestShipping(orderId:int) : ShippingResult
+}
+IServiceContractBase <|-- IShippingAccessor
+@enduml

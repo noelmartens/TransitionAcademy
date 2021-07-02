@@ -1,0 +1,9 @@
+@startuml
+class PaymentAuthStatusResult {
+    + Success : bool <<get>> <<set>>
+    + ErrorCode : int <<get>> <<set>>
+    + ErrorMessage : string <<get>> <<set>>
+    + Total : decimal <<get>> <<set>>
+    + AuthCode : string <<get>> <<set>>
+}
+@enduml

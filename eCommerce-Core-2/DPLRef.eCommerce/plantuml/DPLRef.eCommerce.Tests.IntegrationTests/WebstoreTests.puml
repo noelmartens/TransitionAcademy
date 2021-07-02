@@ -1,0 +1,28 @@
+@startuml
+class WebstoreTests {
+    + Webstore_ShowCatalog() : void
+    + Webstore_ShowCatalogNotFound() : void
+    + Webstore_ShowProduct() : void
+    + Webstore_ShowProductNotFound() : void
+    + Webstore_ShowProductNotFound_Security() : void
+    + Webstore_SaveCartItem() : void
+    + Webstore_SaveCartItemZeroQty() : void
+    + Webstore_SaveCartItemInvalidCatalog() : void
+    + Webstore_SaveCartItemInvalidQuantity() : void
+    + Webstore_SaveCartItemInvalidProductId() : void
+    + Webstore_RemoveCartItem() : void
+    + Webstore_ShowCart() : void
+    + Webstore_ShowCartNotFound() : void
+    + Webstore_ShowCartInvalidCatalog() : void
+    + Webstore_UpdateBillingInfo() : void
+    + Webstore_UpdateBillingInfoBoth() : void
+    + Webstore_UpdateShippingInfo() : void
+    + Webstore_UpdateShippingInfoBoth() : void
+    + Webstore_UpdateBothInfo() : void
+    + Webstore_SubmitOrder() : void
+    + Webstore_SubmitOrderBadCart() : void
+    + Webstore_SubmitOrderBadPaymentMethod() : void
+}
+IntegrationTestBase <|-- WebstoreTests
+WebstoreTests o-> "mockData" MockData
+@enduml

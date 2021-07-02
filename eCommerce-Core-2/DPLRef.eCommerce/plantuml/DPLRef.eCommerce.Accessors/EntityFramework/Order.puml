@@ -1,0 +1,35 @@
+@startuml
+class Order {
+    + Order()
+    + Id : int <<get>> <<set>>
+    + BillingFirst : string <<get>> <<set>>
+    + BillingLast : string <<get>> <<set>>
+    + BillingEmailAddress : string <<get>> <<set>>
+    + BillingAddr1 : string <<get>> <<set>>
+    + BillingAddr2 : string <<get>> <<set>>
+    + BillingCity : string <<get>> <<set>>
+    + BillingState : string <<get>> <<set>>
+    + BillingPostal : string <<get>> <<set>>
+    + ShippingFirst : string <<get>> <<set>>
+    + ShippingLast : string <<get>> <<set>>
+    + ShippingEmailAddress : string <<get>> <<set>>
+    + ShippingAddr1 : string <<get>> <<set>>
+    + ShippingAddr2 : string <<get>> <<set>>
+    + ShippingCity : string <<get>> <<set>>
+    + ShippingState : string <<get>> <<set>>
+    + ShippingPostal : string <<get>> <<set>>
+    + SubTotal : decimal <<get>> <<set>>
+    + TaxAmount : decimal <<get>> <<set>>
+    + Total : decimal <<get>> <<set>>
+    + AuthorizationCode : string <<get>> <<set>>
+    + ShippingProvider : string <<get>> <<set>>
+    + TrackingCode : string <<get>> <<set>>
+    + Notes : string <<get>> <<set>>
+    + SellerId : int <<get>> <<set>>
+    + CatalogId : int <<get>> <<set>>
+}
+Order --> "FromCartId" Guid
+Order o-> "CreatedAt" DateTimeOffset
+Order o-> "UpdatedAt" DateTimeOffset
+Order --> "Status" OrderStatuses
+@enduml

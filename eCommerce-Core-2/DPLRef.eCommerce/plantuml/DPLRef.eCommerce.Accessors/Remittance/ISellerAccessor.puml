@@ -1,0 +1,8 @@
+@startuml
+interface ISellerAccessor {
+    Find(id:int) : Seller
+    Save(seller:Seller) : Seller
+    Delete(id:int) : void
+}
+IServiceContractBase <|-- ISellerAccessor
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class CreateCatalogCommand {
+    + CreateCatalogCommand(ambientContext:AmbientContext)
+    + <<override>> Name : string <<get>>
+}
+BaseUICommand <|-- CreateCatalogCommand
+@enduml

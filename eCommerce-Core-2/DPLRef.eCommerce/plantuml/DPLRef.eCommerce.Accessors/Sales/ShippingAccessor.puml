@@ -1,0 +1,7 @@
+@startuml
+class ShippingAccessor {
+    + RequestShipping(orderId:int) : ShippingResult
+}
+AccessorBase <|-- ShippingAccessor
+IShippingAccessor <|-- ShippingAccessor
+@enduml

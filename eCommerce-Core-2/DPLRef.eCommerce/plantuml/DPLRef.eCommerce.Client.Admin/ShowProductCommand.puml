@@ -1,0 +1,7 @@
+@startuml
+class ShowProductCommand {
+    + ShowProductCommand(ambientContext:AmbientContext)
+    + <<override>> Name : string <<get>>
+}
+BaseUICommand <|-- ShowProductCommand
+@enduml

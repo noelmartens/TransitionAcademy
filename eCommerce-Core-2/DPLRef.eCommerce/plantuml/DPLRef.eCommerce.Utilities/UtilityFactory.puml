@@ -1,0 +1,7 @@
+@startuml
+class UtilityFactory {
+    + UtilityFactory(context:AmbientContext)
+    + CreateUtility() : T
+}
+FactoryBase <|-- UtilityFactory
+@enduml

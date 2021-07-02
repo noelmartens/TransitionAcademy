@@ -1,0 +1,11 @@
+@startuml
+class CartItem {
+    + Id : int <<get>> <<set>>
+    + CatalogId : int <<get>> <<set>>
+    + ProductId : int <<get>> <<set>>
+    + Quantity : int <<get>> <<set>>
+}
+CartItem --> "CartId" Guid
+CartItem o-> "CreatedAt" DateTimeOffset
+CartItem o-> "UpdatedAt" DateTimeOffset
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class RemittanceAccessorTests {
+    + RemittanceAccessor_SalesTotal() : void
+}
+DbTestAccessorBase <|-- RemittanceAccessorTests
+@enduml

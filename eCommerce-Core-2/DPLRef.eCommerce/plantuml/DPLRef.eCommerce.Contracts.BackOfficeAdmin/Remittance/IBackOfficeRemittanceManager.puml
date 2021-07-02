@@ -1,0 +1,6 @@
+@startuml
+interface IBackOfficeRemittanceManager {
+    Totals() : OrderDataResponse
+}
+IServiceContractBase <|-- IBackOfficeRemittanceManager
+@enduml

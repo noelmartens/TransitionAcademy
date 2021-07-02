@@ -1,0 +1,9 @@
+@startuml
+class PaymentAccessorTests {
+    + PaymentAccessor_AuthSuccess() : void
+    + PaymentAccessor_AuthFail() : void
+    + PaymentAccessor_CaptureSuccess() : void
+    + PaymentAccessor_CaptureFail() : void
+}
+DbTestAccessorBase <|-- PaymentAccessorTests
+@enduml

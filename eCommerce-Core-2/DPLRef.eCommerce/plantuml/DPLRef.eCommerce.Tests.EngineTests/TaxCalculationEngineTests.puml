@@ -1,0 +1,6 @@
+@startuml
+class TaxCalculationEngineTests {
+    + TaxCalculationEngine_CalculateCartTax() : void
+}
+EngineTestBase <|-- TaxCalculationEngineTests
+@enduml

@@ -1,0 +1,5 @@
+@startuml
+class DTOPropCopy <<static>> {
+    + {static} CopyProps(source:object, destination:object) : void
+}
+@enduml

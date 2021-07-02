@@ -1,0 +1,8 @@
+@startuml
+class DTOMapper <<static>> {
+    + {static} Map(source:object, dest:object) : void
+    + {static} Map(source:object) : T
+}
+DTOMapper --> "_mapper" IMapper
+DTOMapper --> "Configuration" IConfigurationProvider
+@enduml

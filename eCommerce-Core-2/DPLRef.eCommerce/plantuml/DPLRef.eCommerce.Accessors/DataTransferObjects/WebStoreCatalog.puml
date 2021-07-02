@@ -1,0 +1,10 @@
+@startuml
+class WebStoreCatalog {
+    + Id : int <<get>> <<set>>
+    + SellerId : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + SellerName : string <<get>> <<set>>
+    + IsApproved : bool <<get>> <<set>>
+}
+@enduml

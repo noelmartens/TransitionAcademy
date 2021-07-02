@@ -1,0 +1,9 @@
+@startuml
+class SellerAccessorTests {
+    + CreateSeller() : Seller
+    + SellerAccessor_Find_FindNone() : void
+    + SellerAccessor_Seller_CRUD() : void
+    + SellerAccessor_Seller_UpdateInvalid() : void
+}
+DbTestAccessorBase <|-- SellerAccessorTests
+@enduml

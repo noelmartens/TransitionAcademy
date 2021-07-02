@@ -1,0 +1,5 @@
+@startuml
+interface IReturnsManager {
+}
+IServiceContractBase <|-- IReturnsManager
+@enduml

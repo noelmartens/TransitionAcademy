@@ -1,0 +1,7 @@
+@startuml
+class EmailAccessor {
+    + SendEmailNotification(emailTo:string, subject:string, body:string) : void
+}
+AccessorBase <|-- EmailAccessor
+IEmailAccessor <|-- EmailAccessor
+@enduml

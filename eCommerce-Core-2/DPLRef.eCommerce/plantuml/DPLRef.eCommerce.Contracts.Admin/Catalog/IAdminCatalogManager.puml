@@ -1,0 +1,10 @@
+@startuml
+interface IAdminCatalogManager {
+    FindCatalogs() : AdminCatalogsResponse
+    ShowCatalog(catalogId:int) : AdminCatalogResponse
+    SaveCatalog(catalog:WebStoreCatalog) : AdminCatalogResponse
+    ShowProduct(catalogId:int, productId:int) : AdminProductResponse
+    SaveProduct(catalogId:int, product:Product) : AdminProductResponse
+}
+IServiceContractBase <|-- IAdminCatalogManager
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class AmbientContext {
+    + AuthToken : string <<get>> <<set>>
+    + SellerId : int <<get>> <<set>>
+}
+AmbientContext --> "SessionId" Guid
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class AdminProductResponse {
+}
+ResponseBase <|-- AdminProductResponse
+AdminProductResponse --> "Product" Product
+@enduml

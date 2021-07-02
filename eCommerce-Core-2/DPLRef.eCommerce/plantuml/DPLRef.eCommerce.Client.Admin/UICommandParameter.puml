@@ -1,0 +1,21 @@
+@startuml
+abstract class UICommandParameter {
+    + Message : string <<get>> <<set>>
+    + {abstract} PromptForValue() : void
+}
+class IntUICommandParameter {
+    + Value : int <<get>> <<set>>
+    + <<override>> PromptForValue() : void
+}
+class DecimalUICommandParameter {
+    + Value : decimal <<get>> <<set>>
+    + <<override>> PromptForValue() : void
+}
+class StringUICommandParameter {
+    + Value : string <<get>> <<set>>
+    + <<override>> PromptForValue() : void
+}
+UICommandParameter <|-- IntUICommandParameter
+UICommandParameter <|-- DecimalUICommandParameter
+UICommandParameter <|-- StringUICommandParameter
+@enduml

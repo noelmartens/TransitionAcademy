@@ -1,0 +1,7 @@
+@startuml
+class QueryWithBadTokenCommand {
+    + QueryWithBadTokenCommand(ambientContext:AmbientContext)
+    + <<override>> Name : string <<get>>
+}
+BaseUICommand <|-- QueryWithBadTokenCommand
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+class WebStoreCart {
+    + SubTotal : decimal <<get>> <<set>>
+    + TaxAmount : decimal <<get>> <<set>>
+    + Total : decimal <<get>> <<set>>
+}
+class WebStoreCartItem {
+    + ProductId : int <<get>> <<set>>
+    + ProductName : string <<get>> <<set>>
+    + UnitPrice : decimal <<get>> <<set>>
+    + Quantity : int <<get>> <<set>>
+    + ExtendedPrice : decimal <<get>> <<set>>
+}
+WebStoreCart --> "Id" Guid
+WebStoreCart --> "BillingAddress" Address
+WebStoreCart --> "ShippingAddress" Address
+@enduml

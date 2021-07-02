@@ -1,0 +1,7 @@
+@startuml
+class DTOMapperTests {
+    + DTOMapper_IsDTOMapperConfigValid() : void
+    + DTOMapper_CartMap_1() : void
+    + DTOMapper_CartMap_2() : void
+}
+@enduml

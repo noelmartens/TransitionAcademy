@@ -1,0 +1,7 @@
+@startuml
+class ValidationEngine {
+    + ValidateOrder(order:Order) : ValidationResponse
+}
+EngineBase <|-- ValidationEngine
+IOrderValidationEngine <|-- ValidationEngine
+@enduml

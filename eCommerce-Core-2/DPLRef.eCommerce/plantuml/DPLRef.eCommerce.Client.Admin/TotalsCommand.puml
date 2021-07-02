@@ -1,0 +1,7 @@
+@startuml
+class TotalsCommand {
+    + TotalsCommand(ambientContext:AmbientContext)
+    + <<override>> Name : string <<get>>
+}
+BaseUICommand <|-- TotalsCommand
+@enduml

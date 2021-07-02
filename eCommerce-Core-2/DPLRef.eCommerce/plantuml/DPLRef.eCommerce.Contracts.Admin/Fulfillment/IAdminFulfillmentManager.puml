@@ -1,0 +1,7 @@
+@startuml
+interface IAdminFulfillmentManager {
+    GetOrdersToFulfill() : AdminOpenOrdersResponse
+    FulfillOrder(orderId:int) : AdminFulfillmentResponse
+}
+IServiceContractBase <|-- IAdminFulfillmentManager
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class EmailFormattingEngine {
+    + FormatOrderEmailBody(order:Order, seller:Seller) : string
+}
+EngineBase <|-- EmailFormattingEngine
+IEmailFormattingEngine <|-- EmailFormattingEngine
+@enduml

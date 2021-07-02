@@ -1,0 +1,8 @@
+@startuml
+class RemittanceManager {
+    + <<override>> TestMe(input:string) : string
+    Totals() : BackOffice.OrderDataResponse
+    + Totals() : Admin.SalesTotalsResponse
+}
+ManagerBase <|-- RemittanceManager
+@enduml

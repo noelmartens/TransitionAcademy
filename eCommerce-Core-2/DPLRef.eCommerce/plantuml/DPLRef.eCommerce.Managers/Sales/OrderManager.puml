@@ -1,0 +1,16 @@
+@startuml
+class OrderManager {
+    + <<override>> TestMe(input:string) : string
+    + SaveCartItem(catalogId:int, productId:int, quantity:int) : WebStore.WebStoreCartResponse
+    + RemoveCartItem(catalogId:int, productId:int) : WebStore.WebStoreCartResponse
+    + ShowCart(catalogId:int) : WebStore.WebStoreCartResponse
+    + UpdateBillingInfo(catalogId:int, billingInfo:Address, shippingSameAsBilling:bool) : WebStore.WebStoreCartResponse
+    + UpdateShippingInfo(catalogId:int, shippingInfo:Address, billingSameAsShipping:bool) : WebStore.WebStoreCartResponse
+    + SubmitOrder(catalogId:int, paymentInstrument:PaymentInstrument) : WebStore.WebStoreOrderResponse
+    + GetOrdersToFulfill() : AdminOpenOrdersResponse
+    + FulfillOrder(orderId:int) : AdminFulfillmentResponse
+}
+ManagerBase <|-- OrderManager
+IReturnsManager <|-- OrderManager
+IAdminFulfillmentManager <|-- OrderManager
+@enduml

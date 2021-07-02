@@ -1,0 +1,12 @@
+@startuml
+class Address {
+    + First : string <<get>> <<set>>
+    + Last : string <<get>> <<set>>
+    + EmailAddress : string <<get>> <<set>>
+    + Addr1 : string <<get>> <<set>>
+    + Addr2 : string <<get>> <<set>>
+    + City : string <<get>> <<set>>
+    + State : string <<get>> <<set>>
+    + Postal : string <<get>> <<set>>
+}
+@enduml

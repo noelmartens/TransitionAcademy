@@ -1,0 +1,10 @@
+@startuml
+interface IWebStoreCartManager {
+    SaveCartItem(catalogId:int, productId:int, quantity:int) : WebStoreCartResponse
+    RemoveCartItem(catalogId:int, productId:int) : WebStoreCartResponse
+    ShowCart(catalogId:int) : WebStoreCartResponse
+    UpdateBillingInfo(catalogId:int, billingInfo:Address, shippingSameAsBilling:bool) : WebStoreCartResponse
+    UpdateShippingInfo(catalogId:int, shippingInfo:Address, billingSameAsShipping:bool) : WebStoreCartResponse
+}
+IServiceContractBase <|-- IWebStoreCartManager
+@enduml

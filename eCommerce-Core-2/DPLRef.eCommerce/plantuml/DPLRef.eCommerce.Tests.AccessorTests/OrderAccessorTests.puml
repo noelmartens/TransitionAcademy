@@ -1,0 +1,24 @@
+@startuml
+class OrderAccessorTests {
+    CreateUnfulfilledOrderObject() : Order
+    + OrderAccessor_Submit() : void
+    + OrderAccessor_Submit_Error_NoOrderLines() : void
+    + OrderAccessor_Submit_Error_NoOrder() : void
+    + OrderAccessor_Submit_Error_NoBilling() : void
+    + OrderAccessor_Submit_Error_NoShipping() : void
+    + OrderAccessor_Find() : void
+    + OrderAccessor_Find_Fails() : void
+    + OrderAccessor_SellerSalesTotal() : void
+    + OrderAccessor_SellerSalesTotal_NoResults() : void
+    + OrderAccessor_UnfulfilledOrders() : void
+    + OrderAccessor_UpdateOrderStatus() : void
+    + OrderAccessor_UpdateOrderStatusInvalidOrder() : void
+    + OrderAccessor_UpdateOrderStatusNullOrder() : void
+    + OrderAccessor_FulfillOrder() : void
+    + OrderAccessor_FulfillOrderInvalidOrder() : void
+    + OrderAccessor_FulfillOrderNullOrder() : void
+}
+DbTestAccessorBase <|-- OrderAccessorTests
+OrderAccessorTests --> "BillingAddress" Address
+OrderAccessorTests --> "ShippingAddress" Address
+@enduml

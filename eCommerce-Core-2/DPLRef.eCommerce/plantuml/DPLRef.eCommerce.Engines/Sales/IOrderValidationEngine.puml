@@ -1,0 +1,5 @@
+@startuml
+interface IOrderValidationEngine {
+    ValidateOrder(order:Order) : ValidationResponse
+}
+@enduml

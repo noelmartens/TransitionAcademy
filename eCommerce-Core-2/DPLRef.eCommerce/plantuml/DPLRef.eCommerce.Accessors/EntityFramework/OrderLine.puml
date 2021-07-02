@@ -1,0 +1,14 @@
+@startuml
+class OrderLine {
+    + Id : int <<get>> <<set>>
+    + OrderId : int <<get>> <<set>>
+    + FromCartItemId : int <<get>> <<set>>
+    + ProductId : int <<get>> <<set>>
+    + ProductName : string <<get>> <<set>>
+    + Quantity : int <<get>> <<set>>
+    + UnitPrice : decimal <<get>> <<set>>
+    + ExtendedPrice : decimal <<get>> <<set>>
+}
+OrderLine o-> "CreatedAt" DateTimeOffset
+OrderLine o-> "UpdatedAt" DateTimeOffset
+@enduml

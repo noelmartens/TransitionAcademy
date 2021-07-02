@@ -1,0 +1,9 @@
+@startuml
+class Logger {
+    + Error(ex:Exception) : void
+    + Error(message:string) : void
+    + Error(message:string, ex:Exception) : void
+    + Info(message:string) : void
+    + Debug(message:string) : void
+}
+@enduml

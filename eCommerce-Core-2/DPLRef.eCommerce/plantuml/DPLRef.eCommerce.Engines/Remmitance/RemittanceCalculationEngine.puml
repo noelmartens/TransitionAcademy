@@ -1,0 +1,7 @@
+@startuml
+class RemittanceCalculationEngine {
+    + CalculateFee(sellerId:int, total:decimal) : RemittanceCalculationResult
+}
+EngineBase <|-- RemittanceCalculationEngine
+IRemittanceCalculationEngine <|-- RemittanceCalculationEngine
+@enduml

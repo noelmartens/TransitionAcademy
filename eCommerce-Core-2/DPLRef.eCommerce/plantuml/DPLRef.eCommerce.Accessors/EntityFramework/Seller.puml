@@ -1,0 +1,14 @@
+@startuml
+class Seller {
+    + Seller()
+    + Id : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + IsApproved : bool <<get>> <<set>>
+    + BankRoutingNumber : int <<get>> <<set>>
+    + BankAccountNumber : int <<get>> <<set>>
+    + OrderNotificationEmail : string <<get>> <<set>>
+    + UserName : string <<get>> <<set>>
+}
+Seller o-> "CreatedAt" DateTimeOffset
+Seller o-> "UpdatedAt" DateTimeOffset
+@enduml

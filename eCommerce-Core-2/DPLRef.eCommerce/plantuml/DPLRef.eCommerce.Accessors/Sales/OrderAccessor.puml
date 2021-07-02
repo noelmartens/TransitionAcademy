@@ -1,0 +1,12 @@
+@startuml
+class OrderAccessor {
+    + SaveOrder(catalogId:int, order:Order) : Order
+    + FindOrder(id:int) : Order
+    + SalesTotal() : SellerSalesTotal
+    + UnfulfilledOrders() : Order[]
+    + UpdateOrderStatus(orderId:int, status:OrderStatuses, notes:string) : Order
+    + FulfillOrder(orderId:int, shippingProvider:string, trackingCode:string, notes:string) : Order
+}
+AccessorBase <|-- OrderAccessor
+IOrderAccessor <|-- OrderAccessor
+@enduml

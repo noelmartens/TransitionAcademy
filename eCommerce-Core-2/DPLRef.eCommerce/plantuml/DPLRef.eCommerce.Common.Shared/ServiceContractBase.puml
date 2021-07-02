@@ -1,0 +1,6 @@
+@startuml
+abstract class ServiceContractBase {
+    + <<virtual>> TestMe(input:string) : string
+}
+ServiceContractBase --> "Context" AmbientContext
+@enduml

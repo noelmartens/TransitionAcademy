@@ -1,0 +1,19 @@
+@startuml
+class CartManagerTests {
+    + CartManager_SaveCartItem() : void
+    + CartManager_SaveCartItemInvalidArgument() : void
+    + CartManager_ShowCart() : void
+    + CartManager_ShowCartNotFound() : void
+    + CartManager_ShowCartNoId() : void
+    + CartManager_ShowCartError() : void
+    + CartManager_RemoveCartItem() : void
+    + CartManager_UpdateBillingInfo() : void
+    + CartManager_UpdateBillingInfoError() : void
+    + CartManager_UpdateShippingInfoError() : void
+    + CartManager_UpdateBillingInfoBoth() : void
+    + CartManager_UpdateShippingInfo() : void
+    + CartManager_UpdateShippingInfoBoth() : void
+}
+ManagerTestBase <|-- CartManagerTests
+CartManagerTests o-> "mockData" MockData
+@enduml

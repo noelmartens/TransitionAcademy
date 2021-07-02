@@ -1,0 +1,6 @@
+@startuml
+interface IEmailAccessor {
+    SendEmailNotification(emailTo:string, subject:string, body:string) : void
+}
+IServiceContractBase <|-- IEmailAccessor
+@enduml

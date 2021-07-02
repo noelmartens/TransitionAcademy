@@ -1,0 +1,14 @@
+@startuml
+class MockOrderAccessor {
+    + MockOrderAccessor(data:MockData)
+    + FindOrder(id:int) : Order
+    + FulfillOrder(orderId:int, shippingProvider:string, trackingCode:string, notes:string) : Order
+    + SalesTotal() : SellerSalesTotal
+    + SaveOrder(catalogId:int, order:Order) : Order
+    + TestMe(input:string) : string
+    + UnfulfilledOrders() : Order[]
+    + UpdateOrderStatus(orderId:int, status:OrderStatuses, notes:string) : Order
+}
+MockBase <|-- MockOrderAccessor
+IOrderAccessor <|-- MockOrderAccessor
+@enduml

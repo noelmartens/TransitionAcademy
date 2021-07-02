@@ -1,0 +1,8 @@
+@startuml
+class ManagerFactory {
+    + ManagerFactory(context:AmbientContext, engineFactory:EngineFactory, accessorFactory:AccessorFactory, utilityFactory:UtilityFactory)
+    + CreateManager() : T
+    + CreateManager(engineFactory:EngineFactory, accessorFactory:AccessorFactory, utilityFactory:UtilityFactory) : T
+}
+FactoryBase <|-- ManagerFactory
+@enduml

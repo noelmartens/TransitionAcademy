@@ -1,0 +1,6 @@
+@startuml
+class EmailFormattingEngineTests {
+    + EmailFormattingEngine_FormatOrderEmailBody() : void
+}
+EngineTestBase <|-- EmailFormattingEngineTests
+@enduml

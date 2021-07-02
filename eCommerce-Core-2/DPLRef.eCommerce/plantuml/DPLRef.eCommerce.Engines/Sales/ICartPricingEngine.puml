@@ -1,0 +1,6 @@
+@startuml
+interface ICartPricingEngine {
+    GenerateCartPricing(cart:Cart) : WebStoreCart
+}
+IServiceContractBase <|-- ICartPricingEngine
+@enduml

@@ -1,0 +1,31 @@
+@startuml
+class CatalogManagerTests {
+    + CreateWebStoreCatalogManager() : eCommerce.Contracts.WebStore.Catalog.IWebStoreCatalogManager
+    + CreateAdminCatalogManager() : eCommerce.Contracts.Admin.Catalog.IAdminCatalogManager
+    + SetupMockAccessorFactory() : AccessorFactory
+    + SetupMockUtilityFactory() : UtilityFactory
+    + CatalogManager_WebStoreShowCatalogEmpty() : void
+    + CatalogManager_WebStoreShowCatalog() : void
+    + CatalogManager_WebStoreShowCatalog_InternalException() : void
+    + CatalogManager_WebStoreShowProduct() : void
+    + CatalogManager_WebStoreShowProduct_InternalException() : void
+    + CatalogManager_AdminFindCatalogListEmpty() : void
+    + CatalogManager_AdminFindCatalogList() : void
+    + CatalogManager_AdminFindCatalogListNoAuth() : void
+    + CatalogManager_AdminFindCatalog_InternalException() : void
+    + CatalogManager_AdminShowCatalogEmpty() : void
+    + CatalogManager_AdminShowCatalog() : void
+    + CatalogManager_AdminShowCatalogNoAuth() : void
+    + CatalogManager_AdminShowCatalog_InternalException() : void
+    + CatalogManager_AdminSaveCatalogNoAuth() : void
+    + CatalogManager_AdminSaveCatalog() : void
+    + CatalogManager_AdminSaveCatalog_Failed() : void
+    + CatalogManager_AdminShowProduct() : void
+    + CatalogManager_AdminShowProduct_InternalException() : void
+    + CatalogManager_AdminSaveProduct() : void
+    + CatalogManager_AdminSaveProduct_Fail() : void
+}
+ManagerTestBase <|-- CatalogManagerTests
+CatalogManagerTests o-> "mockData" MockData
+CatalogManagerTests --> "MockCatalogAccessor" MockCatalogAccessor
+@enduml

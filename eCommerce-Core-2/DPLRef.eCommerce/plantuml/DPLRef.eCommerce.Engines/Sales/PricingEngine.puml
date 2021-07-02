@@ -1,0 +1,8 @@
+@startuml
+class PricingEngine {
+    + <<override>> TestMe(input:string) : string
+    + GenerateCartPricing(cart:Cart) : WebStoreCart
+}
+EngineBase <|-- PricingEngine
+ICartPricingEngine <|-- PricingEngine
+@enduml

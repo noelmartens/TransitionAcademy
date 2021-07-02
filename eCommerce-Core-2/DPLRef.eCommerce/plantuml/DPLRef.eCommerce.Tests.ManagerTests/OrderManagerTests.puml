@@ -1,0 +1,11 @@
+@startuml
+class OrderManagerTests {
+    + OrderManager_SubmitOrder() : void
+    + OrderManager_SubmitOrderNoCart() : void
+    + OrderManager_SubmitOrderBadPayment() : void
+    + OrderManager_SubmitOrderInvalidOrder() : void
+    + OrderManager_SubmitOrderException() : void
+}
+ManagerTestBase <|-- OrderManagerTests
+OrderManagerTests --> "mockData" MockData
+@enduml

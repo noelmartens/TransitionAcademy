@@ -1,0 +1,13 @@
+@startuml
+abstract class FactoryBase {
+    + AddOverride(obj:T) : void
+    + AddType(obj:Type) : void
+    + AddSingleton(obj:T) : void
+}
+class "Dictionary`2"<T1,T2> {
+}
+FactoryBase --> "Context" AmbientContext
+FactoryBase o-> "_overrides<string,object>" "Dictionary`2"
+FactoryBase o-> "_types<string,Type>" "Dictionary`2"
+FactoryBase o-> "_singletons<string,object>" "Dictionary`2"
+@enduml

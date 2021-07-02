@@ -1,0 +1,7 @@
+@startuml
+class PaymentCaptureResult {
+    + Success : bool <<get>> <<set>>
+    + ErrorCode : int <<get>> <<set>>
+    + ErrorMessage : string <<get>> <<set>>
+}
+@enduml

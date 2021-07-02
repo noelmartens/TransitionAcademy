@@ -1,0 +1,8 @@
+@startuml
+class TaxCalculationEngine {
+    + <<override>> TestMe(input:string) : string
+    + CalculateCartTax(cart:WebStoreCart) : WebStoreCart
+}
+EngineBase <|-- TaxCalculationEngine
+ITaxCalculationEngine <|-- TaxCalculationEngine
+@enduml

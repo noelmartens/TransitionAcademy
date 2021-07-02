@@ -1,0 +1,8 @@
+@startuml
+interface ISeedDataAccessor {
+    CreateSeller(username:string, sellerName:string) : int
+    CreateCatalog(sellerId:int, catalogName:string) : int
+    CreateProduct(catalogId:int, name:string, isAvailable:bool, isDownloadable:bool, summary:string, detail:string, supplier:string, price:decimal) : int
+}
+IDisposable <|-- ISeedDataAccessor
+@enduml

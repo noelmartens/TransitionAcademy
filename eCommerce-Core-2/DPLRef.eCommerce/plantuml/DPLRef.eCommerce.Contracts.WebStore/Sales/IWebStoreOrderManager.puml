@@ -1,0 +1,6 @@
+@startuml
+interface IWebStoreOrderManager {
+    SubmitOrder(catalogId:int, paymentInstrument:PaymentInstrument) : WebStoreOrderResponse
+}
+IServiceContractBase <|-- IWebStoreOrderManager
+@enduml

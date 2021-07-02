@@ -1,0 +1,6 @@
+@startuml
+class ShippingRulesAccessor {
+}
+AccessorBase <|-- ShippingRulesAccessor
+IShippingRulesAccessor <|-- ShippingRulesAccessor
+@enduml

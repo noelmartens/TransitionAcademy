@@ -1,0 +1,6 @@
+@startuml
+class StringUtilities <<static>> {
+    + {static} DataContractToXml(dataContract:T) : string
+    + {static} DataContractToJson(dataContract:T) : string
+}
+@enduml

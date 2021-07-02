@@ -1,0 +1,7 @@
+@startuml
+class NotificationManagerTests {
+    + NotificationManager_SendNewOrderNotices() : void
+    + NotificationManager_SendShippingNotices() : void
+}
+ManagerTestBase <|-- NotificationManagerTests
+@enduml

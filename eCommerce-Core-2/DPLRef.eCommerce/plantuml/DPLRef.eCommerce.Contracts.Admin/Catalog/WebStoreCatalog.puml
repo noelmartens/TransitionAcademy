@@ -1,0 +1,7 @@
+@startuml
+class WebStoreCatalog {
+    + Id : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+}
+@enduml

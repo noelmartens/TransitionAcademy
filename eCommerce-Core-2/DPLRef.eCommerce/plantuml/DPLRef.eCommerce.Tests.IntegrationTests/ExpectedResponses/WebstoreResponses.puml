@@ -1,0 +1,8 @@
+@startuml
+class WebstoreResponses <<static>> {
+}
+WebstoreResponses o-> "CatalogResponse" WebStoreCatalogResponse
+WebstoreResponses o-> "CatalogNotFoundResponse" WebStoreCatalogResponse
+WebstoreResponses o-> "ProductResponse" WebStoreProductResponse
+WebstoreResponses o-> "ProductNotFoundResponse" WebStoreProductResponse
+@enduml

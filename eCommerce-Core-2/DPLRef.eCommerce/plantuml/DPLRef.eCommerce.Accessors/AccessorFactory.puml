@@ -1,0 +1,8 @@
+@startuml
+class AccessorFactory {
+    + AccessorFactory(context:AmbientContext, utilityFactory:UtilityFactory)
+    + CreateAccessor() : T
+    + CreateAccessor(utilityFactory:UtilityFactory) : T
+}
+FactoryBase <|-- AccessorFactory
+@enduml

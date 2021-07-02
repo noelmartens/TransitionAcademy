@@ -1,0 +1,10 @@
+@startuml
+class MockSecurityUtility {
+    + MockSecurityUtility(data:MockData)
+    + BackOfficeAdminAuthenticated() : bool
+    + SellerAuthenticated() : bool
+    + TestMe(input:string) : string
+}
+MockBase <|-- MockSecurityUtility
+ISecurityUtility <|-- MockSecurityUtility
+@enduml

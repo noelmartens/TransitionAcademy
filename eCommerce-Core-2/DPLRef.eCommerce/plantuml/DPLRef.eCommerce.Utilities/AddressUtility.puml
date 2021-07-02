@@ -1,0 +1,6 @@
+@startuml
+class AddressUtility {
+    + ValidateAddress(address:Address) : bool
+}
+IAddressUtility <|-- AddressUtility
+@enduml

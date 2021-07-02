@@ -1,0 +1,9 @@
+@startuml
+class ShippingResult {
+    + Success : bool <<get>> <<set>>
+    + ErrorCode : int <<get>> <<set>>
+    + ErrorMessage : string <<get>> <<set>>
+    + ShippingProvider : string <<get>> <<set>>
+    + TrackingCode : string <<get>> <<set>>
+}
+@enduml

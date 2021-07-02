@@ -1,0 +1,9 @@
+@startuml
+class SellerAccessor {
+    + Find(id:int) : Seller
+    + Save(seller:Seller) : Seller
+    + Delete(id:int) : void
+}
+AccessorBase <|-- SellerAccessor
+ISellerAccessor <|-- SellerAccessor
+@enduml

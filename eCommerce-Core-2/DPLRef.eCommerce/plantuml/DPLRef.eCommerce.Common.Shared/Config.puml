@@ -1,0 +1,10 @@
+@startuml
+class Config <<static>> {
+    + {static} SqlServerConnectionString : string <<get>>
+    + {static} SqliteConnectionString : string <<get>>
+    + {static} IsSqlServer : bool <<get>>
+    + {static} QueuePath : string <<get>>
+    + {static} IndexPath : string <<get>>
+}
+Config --> "_cachedConfig" IConfiguration
+@enduml

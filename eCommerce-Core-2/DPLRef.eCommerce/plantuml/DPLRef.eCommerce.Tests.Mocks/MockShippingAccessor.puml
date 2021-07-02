@@ -1,0 +1,9 @@
+@startuml
+class MockShippingAccessor {
+    + MockShippingAccessor(data:MockData)
+    + RequestShipping(orderId:int) : ShippingResult
+    + TestMe(input:string) : string
+}
+MockBase <|-- MockShippingAccessor
+IShippingAccessor <|-- MockShippingAccessor
+@enduml

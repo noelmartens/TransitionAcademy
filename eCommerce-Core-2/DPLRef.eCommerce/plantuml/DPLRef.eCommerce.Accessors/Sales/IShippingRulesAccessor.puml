@@ -1,0 +1,5 @@
+@startuml
+interface IShippingRulesAccessor {
+}
+IServiceContractBase <|-- IShippingRulesAccessor
+@enduml

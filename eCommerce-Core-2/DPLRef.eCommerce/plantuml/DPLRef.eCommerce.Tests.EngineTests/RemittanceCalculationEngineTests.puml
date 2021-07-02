@@ -1,0 +1,6 @@
+@startuml
+class RemittanceCalculationEngineTests {
+    + RemittanceCalculationEngine_CalculateFee() : void
+}
+EngineTestBase <|-- RemittanceCalculationEngineTests
+@enduml

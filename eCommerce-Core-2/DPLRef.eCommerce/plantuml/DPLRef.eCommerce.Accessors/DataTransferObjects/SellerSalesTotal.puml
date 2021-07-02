@@ -1,0 +1,8 @@
+@startuml
+class SellerSalesTotal {
+    + SellerId : int <<get>> <<set>>
+    + SellerName : string <<get>> <<set>>
+    + OrderCount : int <<get>> <<set>>
+    + OrderTotal : decimal <<get>> <<set>>
+}
+@enduml

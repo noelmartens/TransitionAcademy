@@ -1,0 +1,6 @@
+@startuml
+class WebStoreOrderResponse {
+}
+ResponseBase <|-- WebStoreOrderResponse
+WebStoreOrderResponse --> "Order" WebStoreOrder
+@enduml

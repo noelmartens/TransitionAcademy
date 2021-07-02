@@ -1,0 +1,14 @@
+@startuml
+class FulfillmentManagerTests {
+    + FulfillmentManager_GetOrdersToFulfill() : void
+    + FulfillmentManager_GetOrdersToFulfill_NoAuth() : void
+    + FulfillmentManager_FulfillOrder() : void
+    + FulfillmentManager_FulfillOrderNoAuth() : void
+    + FulfillmentManager_FulfillOrderBadOrderId() : void
+    + FulfillmentManager_FulfillOrderBadOrderStatus() : void
+    + FulfillmentManager_FulfillOrderCaptureFail() : void
+    + FulfillmentManager_FulfillOrderShippingFail() : void
+    + FulfillmentManager_FulfillOrderException() : void
+}
+ManagerTestBase <|-- FulfillmentManagerTests
+@enduml

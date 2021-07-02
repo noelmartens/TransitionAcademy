@@ -1,0 +1,7 @@
+@startuml
+class OrdersToFulfillCommand {
+    + OrdersToFulfillCommand(ambientContext:AmbientContext)
+    + <<override>> Name : string <<get>>
+}
+BaseUICommand <|-- OrdersToFulfillCommand
+@enduml

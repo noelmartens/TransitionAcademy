@@ -1,0 +1,11 @@
+@startuml
+class CartAccessor {
+    + ShowCart(catalogId:int) : Cart
+    + SaveBillingInfo(catalogId:int, billingAddress:Address) : Cart
+    + SaveShippingInfo(catalogId:int, shippingAddress:Address) : Cart
+    + SaveCartItem(catalogId:int, productId:int, quantity:int) : Cart
+    + DeleteCart(catalogId:int) : bool
+}
+AccessorBase <|-- CartAccessor
+ICartAccessor <|-- CartAccessor
+@enduml

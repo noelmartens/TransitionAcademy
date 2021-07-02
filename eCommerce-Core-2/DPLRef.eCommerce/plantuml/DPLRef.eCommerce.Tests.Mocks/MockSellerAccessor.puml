@@ -1,0 +1,11 @@
+@startuml
+class MockSellerAccessor {
+    + MockSellerAccessor(data:MockData)
+    + Delete(id:int) : void
+    + Find(id:int) : Seller
+    + Save(seller:Seller) : Seller
+    + TestMe(input:string) : string
+}
+MockBase <|-- MockSellerAccessor
+ISellerAccessor <|-- MockSellerAccessor
+@enduml

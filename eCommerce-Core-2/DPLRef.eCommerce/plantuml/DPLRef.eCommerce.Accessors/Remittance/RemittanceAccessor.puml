@@ -1,0 +1,7 @@
+@startuml
+class RemittanceAccessor {
+    + SalesTotal() : SellerOrderData[]
+}
+AccessorBase <|-- RemittanceAccessor
+IRemittanceAccessor <|-- RemittanceAccessor
+@enduml

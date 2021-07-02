@@ -1,0 +1,5 @@
+@startuml
+class DataValidation <<static>> {
+    + {static} AreEqual(expected:object, actual:object, excludeProps:string[]) : void
+}
+@enduml

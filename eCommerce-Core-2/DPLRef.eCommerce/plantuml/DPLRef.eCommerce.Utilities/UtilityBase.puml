@@ -1,0 +1,5 @@
+@startuml
+class UtilityBase {
+}
+ServiceContractBase <|-- UtilityBase
+@enduml

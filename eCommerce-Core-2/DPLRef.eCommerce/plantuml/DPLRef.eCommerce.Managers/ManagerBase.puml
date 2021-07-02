@@ -1,0 +1,8 @@
+@startuml
+abstract class ManagerBase {
+}
+ServiceContractBase <|-- ManagerBase
+ManagerBase --> "EngineFactory" EngineFactory
+ManagerBase --> "AccessorFactory" AccessorFactory
+ManagerBase --> "UtilityFactory" UtilityFactory
+@enduml

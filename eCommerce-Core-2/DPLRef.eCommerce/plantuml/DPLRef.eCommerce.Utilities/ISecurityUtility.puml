@@ -1,0 +1,7 @@
+@startuml
+interface ISecurityUtility {
+    SellerAuthenticated() : bool
+    BackOfficeAdminAuthenticated() : bool
+}
+IServiceContractBase <|-- ISecurityUtility
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+class eCommerceDbContext {
+    + <<override>> Dispose() : void
+    + AllowDispose : bool <<get>> <<set>> = true
+}
+class "DbSet`1"<T> {
+}
+DbContext <|-- eCommerceDbContext
+eCommerceDbContext --> "CartItems<CartItem>" "DbSet`1"
+eCommerceDbContext --> "Carts<Cart>" "DbSet`1"
+eCommerceDbContext --> "Catalogs<Catalog>" "DbSet`1"
+eCommerceDbContext --> "Products<Product>" "DbSet`1"
+eCommerceDbContext --> "Sellers<Seller>" "DbSet`1"
+eCommerceDbContext --> "OrderLines<OrderLine>" "DbSet`1"
+eCommerceDbContext --> "Orders<Order>" "DbSet`1"
+@enduml

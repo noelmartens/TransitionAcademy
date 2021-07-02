@@ -1,0 +1,6 @@
+@startuml
+class WebStoreCartResponse {
+}
+ResponseBase <|-- WebStoreCartResponse
+WebStoreCartResponse --> "Cart" WebStoreCart
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+class Cart {
+}
+class CartItem {
+    + ProductId : int <<get>> <<set>>
+    + ProductName : string <<get>> <<set>>
+    + Quantity : int <<get>> <<set>>
+}
+Cart --> "Id" Guid
+Cart --> "BillingAddress" Address
+Cart --> "ShippingAddress" Address
+@enduml

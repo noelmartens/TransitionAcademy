@@ -1,0 +1,8 @@
+@startuml
+class SecurityUtility {
+    + SellerAuthenticated() : bool
+    + BackOfficeAdminAuthenticated() : bool
+}
+UtilityBase <|-- SecurityUtility
+ISecurityUtility <|-- SecurityUtility
+@enduml

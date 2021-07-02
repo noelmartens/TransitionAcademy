@@ -1,0 +1,13 @@
+@startuml
+class CatalogManager {
+    FindCatalogs() : Admin.AdminCatalogsResponse
+    SaveCatalog(catalog:Admin.WebStoreCatalog) : Admin.AdminCatalogResponse
+    SaveProduct(catalogId:int, product:Admin.Product) : Admin.AdminProductResponse
+    ShowCatalog(catalogId:int) : Admin.AdminCatalogResponse
+    ShowProduct(catalogId:int, productId:int) : Admin.AdminProductResponse
+    ShowCatalog(catalogId:int) : WebStore.WebStoreCatalogResponse
+    ShowProduct(catalogId:int, productId:int) : WebStore.WebStoreProductResponse
+    TestMe(input:string) : string
+}
+ManagerBase <|-- CatalogManager
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+interface IEmailFormattingEngine {
+    FormatOrderEmailBody(order:Order, seller:Seller) : string
+}
+IServiceContractBase <|-- IEmailFormattingEngine
+@enduml

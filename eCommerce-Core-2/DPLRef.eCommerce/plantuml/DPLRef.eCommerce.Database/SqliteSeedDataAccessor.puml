@@ -1,0 +1,11 @@
+@startuml
+class SqliteSeedDataAccessor {
+    + SqliteSeedDataAccessor(connectionString:string)
+    + CreateCatalog(sellerId:int, catalogName:string) : int
+    + CreateProduct(catalogId:int, name:string, isAvailable:bool, isDownloadable:bool, summary:string, detail:string, supplier:string, price:decimal) : int
+    + CreateSeller(username:string, sellerName:string) : int
+    + Dispose() : void
+}
+ISeedDataAccessor <|-- SqliteSeedDataAccessor
+SqliteSeedDataAccessor o-> "_connection" SqliteConnection
+@enduml

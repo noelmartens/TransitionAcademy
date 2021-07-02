@@ -1,0 +1,19 @@
+@startuml
+class Product {
+    + Product()
+    + Id : int <<get>> <<set>>
+    + CatalogId : int <<get>> <<set>>
+    + SellerProductId : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Summary : string <<get>> <<set>>
+    + Detail : string <<get>> <<set>>
+    + Price : decimal <<get>> <<set>>
+    + SupplierName : string <<get>> <<set>>
+    + ShippingWeight : decimal <<get>> <<set>>
+    + IsAvailable : bool <<get>> <<set>>
+    + IsDownloadable : bool <<get>> <<set>>
+    + IsTaxExempt : bool <<get>> <<set>>
+}
+Product o-> "CreatedAt" DateTimeOffset
+Product o-> "UpdatedAt" DateTimeOffset
+@enduml

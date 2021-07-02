@@ -1,0 +1,10 @@
+@startuml
+class MockAsyncUtility {
+    + MockAsyncUtility(data:MockData)
+    + CheckForNewItem() : AsyncQueueItem
+    + SendEvent(eventType:AsyncEventTypes, eventId:int) : void
+    + TestMe(input:string) : string
+}
+MockBase <|-- MockAsyncUtility
+IAsyncUtility <|-- MockAsyncUtility
+@enduml

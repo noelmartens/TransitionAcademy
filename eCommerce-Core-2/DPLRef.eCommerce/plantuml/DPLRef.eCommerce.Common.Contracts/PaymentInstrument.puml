@@ -1,0 +1,11 @@
+@startuml
+class PaymentInstrument {
+    + AccountNumber : string <<get>> <<set>>
+    + ExpirationDate : string <<get>> <<set>>
+    + VerificationCode : int? <<get>> <<set>>
+}
+enum PaymentTypes {
+    CreditCard,
+}
+PaymentInstrument --> "PaymentType" PaymentTypes
+@enduml

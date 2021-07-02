@@ -1,0 +1,12 @@
+@startuml
+class AdminUnfulfilledOrder {
+    + Id : int <<get>> <<set>>
+}
+class AdminUnfulfilledOrderLine {
+    + ProductId : int <<get>> <<set>>
+    + ProductName : string <<get>> <<set>>
+    + Quantity : int <<get>> <<set>>
+}
+AdminUnfulfilledOrder --> "ShippingAddress" Address
+AdminUnfulfilledOrder --> "Status" OrderStatuses
+@enduml

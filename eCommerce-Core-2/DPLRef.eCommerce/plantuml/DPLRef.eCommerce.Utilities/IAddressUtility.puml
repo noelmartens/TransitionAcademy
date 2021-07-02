@@ -1,0 +1,5 @@
+@startuml
+interface IAddressUtility {
+    ValidateAddress(address:Address) : bool
+}
+@enduml

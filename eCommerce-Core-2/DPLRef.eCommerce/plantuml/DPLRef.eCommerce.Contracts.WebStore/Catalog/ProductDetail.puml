@@ -1,0 +1,13 @@
+@startuml
+class ProductDetail {
+    + Id : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Summary : string <<get>> <<set>>
+    + Detail : string <<get>> <<set>>
+    + Price : decimal <<get>> <<set>>
+    + IsDownloadable : bool <<get>> <<set>>
+    + IsTaxExempt : bool <<get>> <<set>>
+    + SupplierName : string <<get>> <<set>>
+    + ShippingWeight : decimal <<get>> <<set>>
+}
+@enduml

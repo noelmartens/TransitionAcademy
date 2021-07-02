@@ -1,0 +1,6 @@
+@startuml
+abstract class MockBase {
+    + MockBase(data:MockData)
+}
+MockBase --> "MockData" MockData
+@enduml

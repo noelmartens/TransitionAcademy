@@ -1,0 +1,7 @@
+@startuml
+interface IWebStoreCatalogManager {
+    ShowCatalog(catalogId:int) : WebStoreCatalogResponse
+    ShowProduct(catalogId:int, productId:int) : WebStoreProductResponse
+}
+IServiceContractBase <|-- IWebStoreCatalogManager
+@enduml

@@ -1,0 +1,49 @@
+@startuml
+class Catalog {
+}
+class Product {
+}
+interface IWebstoreCatalogManager {
+    ShowCatalog() : Catalog
+    ShowProduct() : Product
+}
+class Catalog {
+}
+class Product {
+}
+interface IAdminCatalogManager {
+    FindCatalogs() : Catalog[]
+    ShowCatalog() : Catalog
+    SaveCatalog() : void
+    ShowProduct() : Product
+    SaveProduct() : void
+}
+class CatalogManager {
+}
+class Catalog {
+}
+class Product {
+}
+interface ICatalogAccessor {
+}
+interface IProductAccessor {
+}
+class CatalogAccessor {
+}
+class Order {
+}
+class Return {
+}
+interface IOrderAccessor {
+}
+interface IReturnAccessor {
+}
+class OrderAccessor {
+}
+IWebstoreCatalogManager <|-- CatalogManager
+IAdminCatalogManager <|-- CatalogManager
+ICatalogAccessor <|-- CatalogAccessor
+IProductAccessor <|-- CatalogAccessor
+IOrderAccessor <|-- OrderAccessor
+IReturnAccessor <|-- OrderAccessor
+@enduml

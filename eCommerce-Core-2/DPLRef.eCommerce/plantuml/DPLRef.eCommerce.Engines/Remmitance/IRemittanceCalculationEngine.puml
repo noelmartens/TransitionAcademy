@@ -1,0 +1,6 @@
+@startuml
+interface IRemittanceCalculationEngine {
+    CalculateFee(sellerId:int, total:decimal) : RemittanceCalculationResult
+}
+IServiceContractBase <|-- IRemittanceCalculationEngine
+@enduml

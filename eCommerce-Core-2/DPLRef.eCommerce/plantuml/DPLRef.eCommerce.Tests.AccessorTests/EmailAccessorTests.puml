@@ -1,0 +1,6 @@
+@startuml
+class EmailAccessorTests {
+    + EmailAccessor_Send() : void
+}
+DbTestAccessorBase <|-- EmailAccessorTests
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+class AdminResponses <<static>> {
+}
+AdminResponses --> "GenericCatalog" WebStoreCatalog
+AdminResponses --> "OverflowCatalog" WebStoreCatalog
+AdminResponses o-> "FindCatalogsResponse" AdminCatalogsResponse
+AdminResponses o-> "FindCatalogsNoAuthResponse" AdminCatalogsResponse
+AdminResponses o-> "CatalogResponse" AdminCatalogResponse
+AdminResponses o-> "CatalogNotFoundResponse" AdminCatalogResponse
+AdminResponses o-> "CatalogNoAuthResponse" AdminCatalogResponse
+AdminResponses o-> "CatalogUpdateResponse" AdminCatalogResponse
+AdminResponses o-> "CatalogSellerIdMismatchResponse" AdminCatalogResponse
+AdminResponses o-> "ProductResponse" AdminProductResponse
+AdminResponses o-> "ProductNotFoundResponse" AdminProductResponse
+AdminResponses o-> "ProductNoAuthResponse" AdminProductResponse
+AdminResponses o-> "ProductUpdatedResponse" AdminProductResponse
+AdminResponses o-> "ProductCatalogIdMismtachResponse" AdminProductResponse
+@enduml

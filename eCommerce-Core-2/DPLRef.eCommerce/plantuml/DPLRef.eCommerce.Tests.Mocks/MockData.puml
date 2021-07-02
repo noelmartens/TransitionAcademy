@@ -1,0 +1,35 @@
+@startuml
+class MockData {
+    + OrderCreated : bool
+    + OrderSucceeded : bool
+    + CartDeleted : bool
+    + AsyncCalled : bool <<get>> <<set>>
+    + ForceException : bool <<get>> <<set>>
+    + ForceCaptureFail : bool <<get>> <<set>>
+    + OrderCaptureAttempted : bool <<get>> <<set>>
+    + OrderCapturedStatus : bool <<get>> <<set>>
+    + OrderShippingRequested : bool <<get>> <<set>>
+    + ForceShippingFail : bool <<get>> <<set>>
+    + OrderFulfilled : bool <<get>> <<set>>
+}
+class "List`1"<T> {
+}
+MockData o-> "MySessionId" Guid
+MockData o-> "MyBadSessionId" Guid
+MockData o-> "MyBothInfoSessionId" Guid
+MockData o-> "MySessionIdForOrder" Guid
+MockData o-> "MyAddress" Address
+MockData o-> "MySameAddress" Address
+MockData o-> "MyBadAddress" Address
+MockData --> "Context" AmbientContext
+MockData --> "OrderToFulfill" Order
+MockData o-> "Catalogs<WebStoreCatalog>" "List`1"
+MockData o-> "Products<Product>" "List`1"
+MockData o-> "Carts<Cart>" "List`1"
+MockData o-> "Orders<Order>" "List`1"
+MockData o-> "Sellers<Seller>" "List`1"
+MockData o-> "SellerSalesTotal" SellerSalesTotal
+MockData o-> "SellerSalesTotaList<SellerSalesTotal>" "List`1"
+MockData o-> "SellerOrderData<SellerOrderData>" "List`1"
+MockData o-> "ShippingResult" ShippingResult
+@enduml

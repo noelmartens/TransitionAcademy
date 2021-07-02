@@ -1,0 +1,5 @@
+@startuml
+class ValidationResponse {
+}
+ResponseBase <|-- ValidationResponse
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+class DTOMapper <<static>> {
+    + {static} Map(source:object, dest:object) : void
+    + {static} Map(source:object) : T
+    + {static} MapOrder(model:EntityFramework.Order) : Order
+    + {static} MapOrder(order:Order, model:EntityFramework.Order) : void
+    + {static} MapBilling(address:Common.Contracts.Address, cart:EntityFramework.Cart) : void
+    + {static} MapShipping(address:Common.Contracts.Address, cart:EntityFramework.Cart) : void
+    + {static} MapBilling(address:Address, order:EntityFramework.Order) : void
+    + {static} MapShipping(address:Address, order:EntityFramework.Order) : void
+    + {static} Map(c:EntityFramework.CatalogExtended) : WebStoreCatalog
+}
+DTOMapper --> "_mapper" IMapper
+DTOMapper --> "Mapper" IMapper
+DTOMapper --> "Configuration" IConfigurationProvider
+@enduml

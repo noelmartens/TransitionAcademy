@@ -1,0 +1,8 @@
+@startuml
+class EngineFactory {
+    + EngineFactory(context:AmbientContext, accessorFactory:AccessorFactory, utilityFactory:UtilityFactory)
+    + CreateEngine() : T
+    + CreateEngine(accessorFactory:AccessorFactory, utilityFactory:UtilityFactory) : T
+}
+FactoryBase <|-- EngineFactory
+@enduml

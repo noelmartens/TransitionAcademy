@@ -1,0 +1,7 @@
+@startuml
+interface IPaymentAccessor {
+    Authorize(paymentInstrument:PaymentInstrument, orderId:int, total:decimal) : PaymentAuthStatusResult
+    Capture(authorizationCode:string) : PaymentCaptureResult
+}
+IServiceContractBase <|-- IPaymentAccessor
+@enduml
